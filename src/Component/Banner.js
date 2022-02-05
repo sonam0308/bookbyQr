@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Banner = () => {
     return (
@@ -87,7 +88,7 @@ const Banner = () => {
                                 <a href="#features" className="head-links">Features</a>
                                 <a href="#aboutus" className="head-links">About Us</a>
                                 <a href="#contactus" className="head-links">Contact Us</a> */}
-                                <a href="https://bookbyqr.com/user/sign-up" onclick="captureOutboundLink('https://app.zasta.de/register'); return false;" className="btn btn-default" role="button">Sign In</a>
+                                <Link to="/login" onclick="captureOutboundLink('https://app.zasta.de/register'); return false;" className="btn btn-default" role="button">Sign In</Link>
                             </div>
                         </div>
                     </div>
@@ -99,8 +100,8 @@ const Banner = () => {
                     {/* <h3>Automatische Steuererklärung in 3 Min. mit deinem Steuerberater.</h3> */}
 
                     <h2 className="banner-text" >Scheduling your appointments<br /> should be superfast and supersimple,<br /> Let’s do this in three quick steps.</h2>
-                    <a className="btn btn-primary regst" href="https://bookbyqr.com/user/sign-up" onclick="captureOutboundLink('https://app.zasta.de/register'); return false;" role="button">
-                        Register Now</a>
+                    <Link className="btn btn-primary regst" to="/register" onclick="captureOutboundLink('https://app.zasta.de/register'); return false;" role="button">
+                        Register Now</Link>
                     <img src="img/razorpay.webp" className="tuev-top-mobile hidden-xs" alt="TÜV Saarland" />
                     <div className="jumbotron-logos hidden-xs">
                     </div>

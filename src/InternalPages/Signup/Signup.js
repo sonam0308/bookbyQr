@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Footer from '../../Component/Footer';
 import Header from '../../Component/Header';
 import './Signup.css'
 
@@ -12,6 +14,16 @@ const Signup = () => {
         </h3>
       </div>
       <div className="box-form">
+      <div className="left">
+          <div className="overlay">
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Curabitur et est sed felis aliquet sollicitudin</p>
+            <span style={{marginLeft: '20%', marginTop: '20%'}}>
+              <img src="https://app.zasta.de/5570835351ccbed5a1f517f68e7ca081.png" />
+            </span>
+          </div>
+        </div>
         <div className="right">
           <h5>Your Details</h5>
           <div className="inputs">
@@ -42,20 +54,14 @@ const Signup = () => {
           </div>
           <br />
           <button>Sign Up</button>
-        </div>
-        <div className="left">
-          <div className="overlay">
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Curabitur et est sed felis aliquet sollicitudin</p>
-            <span>
-              <img src="https://app.zasta.de/5570835351ccbed5a1f517f68e7ca081.png" />
-            </span>
+          <div className="new-user">
+            <Link to="/login">Already Registered? Login to BookByQr</Link>
           </div>
         </div>
+        
       </div>
       {/* partial */}
-
+      <Footer/>
     </>
   )
 };
