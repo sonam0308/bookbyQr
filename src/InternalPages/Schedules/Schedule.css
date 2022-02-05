@@ -47,11 +47,11 @@
     font-size: 15px !important;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
     .button{
         border-radius: 20px;
-        width: 40%;
-        height: 50px;
+        width: 35%;
+        height: 40px;
         background-color: #e7ca15 !important;
         color: #3c30e7;
         font-size: 15px;
