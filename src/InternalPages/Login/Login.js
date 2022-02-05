@@ -34,7 +34,7 @@ const Login = () => {
           <div className="remember-me--forget-password">
             <p>Forget Password</p>
           </div>
-          {/* <button>Login</button> */}
+          <Link to="/schedules"><button>Login</button></Link>
           <div className="new-user">
             <Link to="/register">New to BookByQr? Signup Now For Free</Link>
           </div>
