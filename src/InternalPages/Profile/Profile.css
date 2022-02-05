@@ -1,0 +1,66 @@
+.box {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+}
+.h2-tag{
+    text-align: center;
+}
+
+.p-tag{
+    margin: 5px;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.edit-btn{
+    background-color: #3c30e7;
+    color: #FFFFFF;
+    border: none;
+    width: 150px;
+    border-radius: 10px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.delete-btn{
+    background-color: #bd3f36;
+    color: #FFFFFF;
+    border: none;
+    width: 150px;
+    border-radius: 10px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 375px){
+    .vertical-center {
+        margin: 0;
+        position: relative;
+        top: 50%;
+        left: 10%;
+        /* -ms-transform: translateY(50%);
+        transform: translateY(50%); */
+    }
+    .edit-btn{
+        background-color: #3c30e7;
+        color: #FFFFFF;
+        border: none;
+    }
+    
+    .delete-btn{
+        background-color: #bd3f36;
+        color: #FFFFFF;
+        border: none;
+    }    
+}

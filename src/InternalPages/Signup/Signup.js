@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../../Component/Footer';
 import Header from '../../Component/Header';
 import './Signup.css'
 
 const Signup = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       <Header/>
@@ -44,11 +47,11 @@ const Signup = () => {
           <br /><br />
           <div className="remember-me--forget-password">
             <label>
-              <input type="checkbox" name="item" defaultChecked />
+              <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
               <span className="text-checkbox">Free Plan</span>
             </label>
             <label>
-              <input type="checkbox" name="item" defaultChecked />
+              <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
               <span className="text-checkbox">Accept Terms of Service</span>
             </label>
           </div>

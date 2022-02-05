@@ -1,4 +1,4 @@
-.title{
+.heading{
     text-align: center !important;
 }
 .button{
@@ -12,7 +12,7 @@
     border: none;
     margin-bottom: 20px;
 }
-.container hr{
+.hr{
     width: 30%;
     border: 2px solid black;
 }
