@@ -1,13 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../Footer";
 import Header from "../Header";
 import './Privacy.css'
-// import Footer from './Component/Footer';
-// import Header from './Component/Header';
-
-{/* <Header /> */ }
 
 export default function Privacy() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     const boxStyle = {
         backgroundColor: "#f5f7f9",
         border: "solid 1px #d1dae3",

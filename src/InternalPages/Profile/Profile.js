@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Footer from '../../Component/Footer';
 import Header from '../../Component/Header';
 import './Profile.css'
 
 const Profile = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return (
         <>
             <Header />
