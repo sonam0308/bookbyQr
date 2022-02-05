@@ -8,13 +8,13 @@ const Signup = () => {
   return (
     <>
       <Header/>
-      <div style={{textAlign: 'center'}}>
+      <div style={{textAlign: 'center', marginBottom: '35px'}}>
         <h3>
         REGISTER NOW FOR FREE AT BOOKBYQR
         </h3>
       </div>
       <div className="box-form">
-      <div className="left">
+      <div className="left hidden-xs">
           <div className="overlay">
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
