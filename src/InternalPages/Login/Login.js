@@ -13,7 +13,7 @@ const Login = () => {
         </h3>
       </div>
       <div className="box-form">
-        <div className="left">
+        <div className="left hidden-xs">
           <div className="overlay-left">
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -28,15 +28,15 @@ const Login = () => {
             <input type="email" placeholder="Email" />
             <br />
             <input type="password" placeholder="Password" />
-            <br />
+            
           </div>
-          <br /><br />
+          <br />
           <div className="remember-me--forget-password">
-            <p>Forget Password</p>
+            <p>Forgot Password?</p>
           </div>
           <Link to="/schedules"><button>Login</button></Link>
           <div className="new-user">
-            <Link to="/register">New to BookByQr? Signup Now For Free</Link>
+            New to BookByQr?<Link to="/register"> Signup Now For Free</Link>
           </div>
         </div>
       </div>
