@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Promise() {
     return <div>
@@ -12,7 +13,7 @@ export default function Promise() {
                 <h2 className='prom-desc'>We promise to offer simplest appoinments<br /> booking service</h2>
                 {/* <p><font style={{verticalAlign: 'inherit'}}><font style={{verticalAlign: 'inherit'}}>The Zasta tax advisor will calculate your refund and send you an offer. </font><font style={{verticalAlign: 'inherit'}}>Only if you accept it will the tax consultant work for you and only then will the costs arise from the offer.</font></font></p> */}
                 <p className='prom-desc-2'>With no registration requirements by your customers and the fastest OTP checks, we aim to let your customers book their appointment with you in a simplest and fastest way.</p>
-                <a className="btn btn-primary btn-width" href="https://bookbyqr.com/user/sign-up" onclick="captureOutboundLink('https://app.zasta.de/register'); return false;" role="button"><font style={{verticalAlign: 'inherit'}}><font style={{verticalAlign: 'inherit'}}>sign up now for free</font></font></a>
+                <Link className="btn btn-primary btn-width" to="/register" onclick="captureOutboundLink('https://app.zasta.de/register'); return false;" role="button"><font style={{verticalAlign: 'inherit'}}><font style={{verticalAlign: 'inherit'}}>sign up now for free</font></font></Link>
             </div>
         </div>
     </div>;

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ZastaDashboard = () => {
     return (
@@ -42,8 +43,8 @@ const ZastaDashboard = () => {
                     <div className="dashboard-features carousel slide" id="dashboard-features-carousel" />
                 </div>
                 <div className="row link-register">
-                    <a className="btn btn-primary" href="https://app.zasta.de/register" onclick="captureOutboundLink('https://app.zasta.de/register'); return false;" role="button">
-                        Register Now</a>
+                    <Link className="btn btn-primary" to="/register" onclick="captureOutboundLink('https://app.zasta.de/register'); return false;" role="button">
+                        Register Now</Link>
                 </div>
                 <div className="row Path-51 bottom" />
             </div>
