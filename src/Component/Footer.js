@@ -2,7 +2,7 @@ import React from 'react'
 import AddLocationAltOutlinedIcon from '@mui/icons-material/AddLocationAltOutlined';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-
+import {Link} from 'react-router-dom'
 const Footer = () => {
     return (
         <div>
@@ -33,9 +33,9 @@ const Footer = () => {
                         <div className="col-sm-3">
                             <span className="title">Policies</span>
                             <ul>
-                                <li><a href="/">Terms of Use</a></li>
-                                <li><a href="/">Privacy Policy</a></li>
-                                <li><a href="/">Refund Policy</a></li>
+                                <li><Link to="/terms">Terms of Use</Link></li>
+                                <li><Link to="/privacy">Privacy Policy</Link></li>
+                                <li><Link to="/refund">Refund Policy</Link></li>
                             </ul>
                         </div>
                         <div className="col-sm-3">
