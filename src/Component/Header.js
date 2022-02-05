@@ -5,10 +5,10 @@ const Header = () => {
     return (
         <>
             <div className="navbar-header-nav">
-                <button type="button" className="navbar-toggle collapsed" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body">
+                {/* <button type="button" className="navbar-toggle collapsed" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body">
                     <span className="icon-bar" />
                     <span className="icon-bar" />
-                </button>
+                </button> */}
                 <div className='header'>
                     <Link className="navbar-brand" to="/">
                         <img src="img/svg/logo.svg" className="logo" alt="ZASTA" />

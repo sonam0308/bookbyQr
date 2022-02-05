@@ -1,0 +1,62 @@
+.container{
+    text-align: center !important;
+}
+.button{
+    border-radius: 20px;
+    width: 20%;
+    height: 40px;
+    background-color: #e7ca15 !important;
+    color: #3c30e7;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    margin-bottom: 20px;
+}
+.container hr{
+    width: 30%;
+    border: 2px solid black;
+}
+
+/* Row */
+.css-y8ay40-MuiTableCell-root{
+    font-size: 15px !important;
+    font-weight: 800 !important;
+}
+
+.css-i02g0k-MuiTableCell-root{
+    font-size: 15px !important;
+    font-weight: 800 !important;
+}
+
+/* Cell */
+
+.css-177gid-MuiTableCell-root{
+    font-size: 15px !important;
+}
+
+.css-1ex1afd-MuiTableCell-root{
+    font-size: 15px !important;
+}
+/* Pagination */
+
+.css-pdct74-MuiTablePagination-selectLabel{
+    font-size: 15px !important;
+}
+
+.css-levciy-MuiTablePagination-displayedRows{
+    font-size: 15px !important;
+}
+
+@media screen and (min-width: 375px) {
+    .button{
+        border-radius: 20px;
+        width: 40%;
+        height: 50px;
+        background-color: #e7ca15 !important;
+        color: #3c30e7;
+        font-size: 15px;
+        font-weight: 500;
+        border: none;
+        margin-bottom: 20px;
+    }
+}
