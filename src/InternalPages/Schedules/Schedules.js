@@ -74,9 +74,9 @@ const Schedules = () => {
     return (
         <>
             <Header />
-            <div className='container title'>
+            <div className='container heading'>
                 <h2>Your Schedules</h2>
-                <hr />
+                <hr className='hr'/>
                 <button className="button">Add Schedules</button>
                 {/* </div>
                 <div className='container'> */}
