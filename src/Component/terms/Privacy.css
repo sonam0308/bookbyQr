@@ -15,6 +15,9 @@
 .privacy-inner-wrap {
   margin-bottom: 36px;
 }
+.privacy-inner-wrap p,a{
+  word-break: break-all;
+}
 .privacy-wrap {
   padding: 33px 85px 46px;
 }

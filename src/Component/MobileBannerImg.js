@@ -4,7 +4,7 @@ const MobileBannerImg = () => {
     return (
         <div id='features'>
             <div className="container funktioniert text-center">
-                <div className="row header header-3-step">
+                <div className="row header header-3-step header-features">
                     <img src="img/svg/downarrow.png" className="funktioniert-header-img" alt="Klick" loading="lazy" />
                     <h2 className='mobBanner-title'>Use BookByQR <br/>to manage your scheduled and appointments</h2>
                 </div>

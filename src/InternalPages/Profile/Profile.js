@@ -11,7 +11,7 @@ const Profile = () => {
         <>
             <Header />
             <h2 className='h2-tag'>Account Info</h2>
-            <div className='container box'>
+            <div className='container profile-box'>
                 <div className='row'>
                     <div className='col-md-4 col-lg-3 col-sm-2 col-xs-6'>
                         <div style={{ display: 'flex' }}>

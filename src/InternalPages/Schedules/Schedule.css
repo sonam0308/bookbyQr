@@ -3,7 +3,7 @@
 }
 .button{
     border-radius: 20px;
-    width: 20%;
+    /* width: 20%; */
     height: 40px;
     background-color: #e7ca15 !important;
     color: #3c30e7;

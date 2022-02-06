@@ -7,8 +7,8 @@ const ZastaAdvantage = () => {
                 <div className="container mit-zasta text-center">
                     <div className="row header">
                         <img src="img/svg/Zasta_Icons_Star.svg" className="Fill-1543" alt="Rakete" loading="lazy" />
-                        <h2 className='how-title'>How is it possible.</h2>
                     </div>
+                        <h2 className='how-title'>How is it possible.</h2>
                     <div className="row carousel slide container carousel-container" id='feature-slider'>
                         <div className="col-sm-4">
                             <div className="box">

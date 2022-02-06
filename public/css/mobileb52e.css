@@ -316,7 +316,10 @@
         .mit-zasta .box {
             margin-bottom: 50px;
         }
-        .row.header{margin-bottom:0;}
+        .row.header{
+            margin-bottom:0;
+            /* flex-direction: column; */
+        }
         .row.header h2{
             padding-bottom: 38px;
             margin-bottom: 33px;
