@@ -1143,6 +1143,11 @@ video::-webkit-media-controls-start-playback-button {
   transform: translate3d(0, 0, 0);
 }
 
+.header-features{
+  display: flex;
+  flex-direction: column;
+}
+
 @media all and (max-width: 991px) {
   .video-wrap {
     margin-top: -80px;
