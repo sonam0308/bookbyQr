@@ -9,7 +9,10 @@ import Termsofuse from './Component/terms/Terms';
 import Privacy from './Component/terms/Privacy';
 import Refund from './Component/terms/Refund';
 import Profile from './InternalPages/Profile/Profile';
+import FullWidthTabs from './InternalPages/Billing/Billing';
+import Qrcode from './InternalPages/QRcode/Qrcode';
 import AllAppointments from './InternalPages/AllAppointments/AllAppointments';
+
 function App() {
   return (
     <>
@@ -23,9 +26,12 @@ function App() {
         <Route path='/privacy' component={Privacy}/>
         <Route path='/refund' component={Refund}/>
         <Route path='/profile' component={Profile}/>
+        <Route path='/billing' component={FullWidthTabs}/>
+        <Route path='/qrcode' component={Qrcode}/>
         <Route path='/appointment' component={AllAppointments}/>
       </Switch>
     </BrowserRouter>
+
     </>
   );
 }
