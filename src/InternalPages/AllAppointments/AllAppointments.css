@@ -1,0 +1,99 @@
+.appointment-box{
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    /* width: 70%; */
+}
+
+.appointment-form{
+    text-align: center;
+}
+
+.appointment-input{
+    border-color: darkgrey;
+    border-radius: 5px;
+}
+
+.input-style{
+    width: 80px;
+    height: 40px;
+}
+
+.input-style-slot{
+    width: 80px;
+    height: 40px;
+}
+
+.appoint-week{
+    margin-top: 50px;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.margin-appoint{
+    margin: 20px;
+    width: 100%;
+    margin-left: 10%;
+}
+
+.box-appointmet{
+    float: left;
+  height: 20px;
+  width: 20px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  clear: both;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.white {
+    background-color: white;
+}
+
+.back-btn{
+    background-color: #FFFFFF;
+    color: #000000;
+    border: none;
+    width: 150px;
+    border-radius: 10px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.confirm-btn{
+    background-color: #3c30e7;
+    color: #FFFFFF;
+    border: none;
+    width: 150px;
+    border-radius: 10px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 375px){
+    .vertical-center {
+        margin: 0;
+        position: relative;
+        top: 50%;
+        left: 10%;
+        /* -ms-transform: translateY(50%);
+        transform: translateY(50%); */
+    }
+    .back-btn{
+        background-color: #FFFFFF;
+        color: #000000;
+        border: none;
+    }
+    
+    .confirm-btn{
+        background-color: #3c30e7;
+        color: #FFFFFF;
+        border: none;
+    }    
+}
