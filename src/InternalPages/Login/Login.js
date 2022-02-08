@@ -1,9 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../../Component/Footer';
 import Header from '../../Component/Header';
 import '../Signup/Signup.css'
 const Login = () => {
+
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -28,10 +32,13 @@ const Login = () => {
         </div>
         <div className="right">
           <div className="inputs">
-            <input type="email" placeholder="Email" />
+            <input type="email" placeholder="Email"
+              name="email" value={email}
+              onChange={(e) => { setEmail(e.target.value) }} />
             <br />
-            <input type="password" placeholder="Password" />
-            
+            <input type="password" placeholder="Password"
+              name="password" value={password}
+              onChange={(e) => { setPassword(e.target.value) }} />
           </div>
           <br />
           <div className="remember-me--forget-password">

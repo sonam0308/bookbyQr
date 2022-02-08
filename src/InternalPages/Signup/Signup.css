@@ -125,12 +125,12 @@
   }
   
   .remember-me--forget-password label {
-    display: block;
+    display: flex;
     position: relative;
     margin-left: 30px;
   }
   
-  .remember-me--forget-password label::before {
+  /* .remember-me--forget-password label::before {
     content: ' \f00c';
     position: absolute;
     font-family: FontAwesome;
@@ -142,16 +142,16 @@
     transition: all 0.2s linear;
     width: 25px;
     height: 25px;
-  }
+  } */
   
-  .remember-me--forget-password label:hover::before {
+  /* .remember-me--forget-password label:hover::before {
     font-family: FontAwesome;
     content: ' \f00c';
     color: #fff;
     cursor: pointer;
     background: #3c30e7;
   }
-  
+   */
   .remember-me--forget-password label:hover::before .text-checkbox {
     background: #3c30e7;
   }
@@ -165,7 +165,7 @@
   }
   
   label input[type="checkbox"] {
-    display: none;
+    display: flex;
   }
   /* Header */
 

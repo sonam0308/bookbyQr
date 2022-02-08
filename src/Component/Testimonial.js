@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
 export default function Testimonial() {
-    const url = 'https://bookbyqr.com/api/book-by-qr/api/get_testimonials'
+    const url = ''
     const [testimonialData, setTestimonialData] = useState([])
     useEffect(() => {
         const script = document.createElement('script')
@@ -15,7 +15,7 @@ export default function Testimonial() {
     }, [])
 
     useEffect(async () => {
-        const response = await axios.get(url)
+        const response = await axios.get(process.env.REACT_APP_BASE_URL + '/get_testimonials')
         setTestimonialData(response.data.data.testimonials)
     }, [])
 
