@@ -14,21 +14,21 @@ const AllAppointments = () => {
                         <input type="text" placeholder='Scheduler Name' className='appointment-input' />
                     </form>
                 </div>
-                <div className='row' style={{ marginTop: '50px' }}>
-                    <div className='col-md-7 col-lg-7 col-sm-1'>
-                        <div style={{ display: 'flex' }}>
+                <div className='row'>
+                    <div className='col-md-12'>
+                        <div className="centerText" style={{ display: 'flex' }}>
                             <p>Choose Date: </p>
                             <input type='date' placeholder='27/02/2020' /> &nbsp; to &nbsp; <input type='date' placeholder='27/02/2020' />
                         </div>
                     </div>
-                    <div className='col-md-2 col-lg-2 col-sm-1'>
-                        <div style={{ display: 'flex' }}>
+                    <div className='col-xs-6'>
+                        <div className="centerText" style={{ display: 'flex' }}>
                             <p>Parallel Slots:</p> &nbsp;
                             <input type='text' placeholder='One' className='input-style' />
                         </div>
                     </div>
-                    <div className='col-md-2 col-lg-2 col-sm-1'>
-                        <div style={{ display: 'flex' }}>
+                    <div className='col-md-6 '>
+                        <div className="centerText" style={{ display: 'flex' }}>
                             <p>Slot Duration:</p> &nbsp;
                             <input type='text' placeholder='15 Min' className='input-style-slot' />
                         </div>
@@ -36,8 +36,8 @@ const AllAppointments = () => {
                 </div>
                 <div className='appoint-week'>
                     <div className='row margin-appoint'>
-                        <div className='col-md-6 col-lg-6'>
-                            <div>
+                        <div className='col-xs-4 col-md-6 col-lg-6'>
+                            <div className='box-appt-wrap'>
                                 <div className='box-appointmet yellow'></div>
                                 &nbsp; Monday
                             </div>
@@ -48,8 +48,8 @@ const AllAppointments = () => {
                         </div>
                     </div>
                     <div className='row margin-appoint'>
-                        <div className='col-md-6 col-lg-6'>
-                            <div>
+                        <div className='col-xs-4 col-md-6 col-lg-6'>
+                            <div className='box-appt-wrap'>
                                 <div className='box-appointmet yellow'></div>
                                 &nbsp; Tuesday
                             </div>
@@ -60,8 +60,8 @@ const AllAppointments = () => {
                         </div>
                     </div>
                     <div className='row margin-appoint'>
-                        <div className='col-md-6 col-lg-6'>
-                            <div>
+                        <div className='col-xs-4 col-md-6 col-lg-6'>
+                            <div className='box-appt-wrap'>
                                 <div className='box-appointmet yellow'></div>
                                 &nbsp; Wednesday
                             </div>
@@ -72,8 +72,8 @@ const AllAppointments = () => {
                         </div>
                     </div>
                     <div className='row margin-appoint'>
-                        <div className='col-md-6 col-lg-6'>
-                            <div>
+                        <div className='col-xs-4 col-md-6 col-lg-6'>
+                            <div className='box-appt-wrap'>
                                 <div className='box-appointmet yellow'></div>
                                 &nbsp; Thursday
                             </div>
@@ -84,8 +84,8 @@ const AllAppointments = () => {
                         </div>
                     </div>
                     <div className='row margin-appoint'>
-                        <div className='col-md-6 col-lg-6'>
-                            <div>
+                        <div className='col-xs-4 col-md-6 col-lg-6'>
+                            <div className='box-appt-wrap'>
                                 <div className='box-appointmet yellow'></div>
                                 &nbsp; Friday
                             </div>
@@ -96,7 +96,7 @@ const AllAppointments = () => {
                         </div>
                     </div>
                     <div className='row margin-appoint'>
-                        <div className='col-md-6 col-lg-6'>
+                        <div className='col-xs-4 col-md-6 col-lg-6'>
                             <div>
                                 <div className='box-appointmet white'></div>
                                 &nbsp; Saturday
@@ -108,7 +108,7 @@ const AllAppointments = () => {
                         </div>
                     </div>
                     <div className='row margin-appoint'>
-                        <div className='col-md-6 col-lg-6'>
+                        <div className='col-xs-4 col-md-6 col-lg-6'>
                             <div>
                                 <div className='box-appointmet white'></div>
                                 &nbsp; Sunday
