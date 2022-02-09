@@ -39,7 +39,6 @@
 
 .margin-appoint {
   margin: 20px;
-  width: 100%;
   margin-left: 10%;
 }
 
@@ -109,7 +108,11 @@
     width: auto;
   }
 }
-
+@media screen and (max-width: 640px) {
+  .appoint-week input {
+    padding: 6px 10px;
+  }
+}
 @media screen and (max-width: 580px) {
   .margin-appoint {
     margin-left: 8px;

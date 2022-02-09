@@ -12,6 +12,7 @@ import Profile from './InternalPages/Profile/Profile';
 import FullWidthTabs from './InternalPages/Billing/Billing';
 import Qrcode from './InternalPages/QRcode/Qrcode';
 import AllAppointments from './InternalPages/AllAppointments/AllAppointments';
+import Pricing from './Component/Pricing';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path='/billing' component={FullWidthTabs}/>
         <Route path='/qrcode' component={Qrcode}/>
         <Route path='/appointment' component={AllAppointments}/>
+        <Route path='/pricing' component={Pricing}/>
       </Switch>
     </BrowserRouter>
 
