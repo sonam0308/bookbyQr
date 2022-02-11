@@ -43,8 +43,8 @@ const AllAppointments = () => {
                                     {/* <div className='box-appointmet yellow'></div> */}
                                     &nbsp; Monday
                                 </div>
-
                                 <Switch defaultChecked />
+                                <h4>Open</h4>
                             </div>
 
                         </div>
@@ -60,8 +60,8 @@ const AllAppointments = () => {
                                     {/* <div className='box-appointmet yellow'></div> */}
                                     &nbsp; Tuesday
                                 </div>
-
                                 <Switch defaultChecked />
+                                <h4>Open</h4>
                             </div>
 
                         </div>
@@ -77,8 +77,8 @@ const AllAppointments = () => {
                                     {/* <div className='box-appointmet yellow'></div> */}
                                     &nbsp; Wednesday
                                 </div>
-
                                 <Switch defaultChecked />
+                                <h4>Open</h4>
                             </div>
 
                         </div>
@@ -94,8 +94,8 @@ const AllAppointments = () => {
                                     {/* <div className='box-appointmet yellow'></div> */}
                                     &nbsp; Thursday
                                 </div>
-
                                 <Switch defaultChecked />
+                                <h4>Open</h4>
                             </div>
 
                         </div>
@@ -111,8 +111,8 @@ const AllAppointments = () => {
                                     {/* <div className='box-appointmet yellow'></div> */}
                                     &nbsp; Friday
                                 </div>
-
                                 <Switch defaultChecked />
+                                <h4>Open</h4>
                             </div>
                         </div>
                         <div className='col-xs-8 col-lg-6'>
@@ -128,6 +128,7 @@ const AllAppointments = () => {
                                     &nbsp; Saturday
                                 </div>
                                 <Switch defaultChecked />
+                                <h4>Open</h4>
                             </div>
                         </div>
                         <div className='col-xs-8 col-lg-6'>
@@ -143,6 +144,7 @@ const AllAppointments = () => {
                                     &nbsp; Sunday
                                 </div>
                                 <Switch defaultChecked />
+                                <h4>Open</h4>
                             </div>
                         </div>
                         <div className='col-xs-8 col-lg-6'>
