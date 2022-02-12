@@ -2,6 +2,7 @@ import React from 'react';
 import './AllAppointments.css'
 import Footer from '../../Component/Footer';
 import Header from '../../Component/Header';
+import { Switch } from '@mui/material';
 
 const AllAppointments = () => {
     return (
@@ -14,21 +15,21 @@ const AllAppointments = () => {
                         <input type="text" placeholder='Scheduler Name' className='appointment-input' />
                     </form>
                 </div>
-                <div className='row' style={{ marginTop: '50px' }}>
-                    <div className='col-md-7 col-lg-7 col-sm-1'>
-                        <div style={{ display: 'flex' }}>
+                <div className='row'>
+                    <div className='col-md-12'>
+                        <div className="centerText" style={{ display: 'flex' }}>
                             <p>Choose Date: </p>
                             <input type='date' placeholder='27/02/2020' /> &nbsp; to &nbsp; <input type='date' placeholder='27/02/2020' />
                         </div>
                     </div>
-                    <div className='col-md-2 col-lg-2 col-sm-1'>
-                        <div style={{ display: 'flex' }}>
+                    <div className='col-xs-6'>
+                        <div className="centerText" style={{ display: 'flex' }}>
                             <p>Parallel Slots:</p> &nbsp;
                             <input type='text' placeholder='One' className='input-style' />
                         </div>
                     </div>
-                    <div className='col-md-2 col-lg-2 col-sm-1'>
-                        <div style={{ display: 'flex' }}>
+                    <div className='col-md-6 '>
+                        <div className="centerText" style={{ display: 'flex' }}>
                             <p>Slot Duration:</p> &nbsp;
                             <input type='text' placeholder='15 Min' className='input-style-slot' />
                         </div>
@@ -36,86 +37,118 @@ const AllAppointments = () => {
                 </div>
                 <div className='appoint-week'>
                     <div className='row margin-appoint'>
-                        <div className='col-md-6 col-lg-6'>
-                            <div>
-                                <div className='box-appointmet yellow'></div>
-                                &nbsp; Monday
+                        <div className='col-xs-4 col-md-6 col-lg-6'>
+                            <div className='box-wrap-toggle'>
+                                <div className='box-appt-wrap'>
+                                    {/* <div className='box-appointmet yellow'></div> */}
+                                    &nbsp; Monday
+                                </div>
+                                <Switch defaultChecked />
+                                <h4>Open</h4>
                             </div>
+
                         </div>
-                        <div className='col-md-6 col-lg-6'>
-                            <input type="time" id="appt" name="appt" />
+                        <div className='col-xs-8 col-lg-6'>
+                            &nbsp; From &nbsp;<input type="time" id="appt" name="appt" />
                             &nbsp; to &nbsp;<input type="time" id="appt" name="appt" />
                         </div>
                     </div>
                     <div className='row margin-appoint'>
-                        <div className='col-md-6 col-lg-6'>
-                            <div>
-                                <div className='box-appointmet yellow'></div>
-                                &nbsp; Tuesday
+                        <div className='col-xs-4 col-md-6 col-lg-6'>
+                            <div className='box-wrap-toggle'>
+                                <div className='box-appt-wrap'>
+                                    {/* <div className='box-appointmet yellow'></div> */}
+                                    &nbsp; Tuesday
+                                </div>
+                                <Switch defaultChecked />
+                                <h4>Open</h4>
                             </div>
+
                         </div>
-                        <div className='col-md-6 col-lg-6'>
-                            <input type="time" id="appt" name="appt" />
+                        <div className='col-xs-8 col-lg-6'>
+                            &nbsp; From &nbsp;<input type="time" id="appt" name="appt" />
                             &nbsp; to &nbsp;<input type="time" id="appt" name="appt" />
                         </div>
                     </div>
                     <div className='row margin-appoint'>
-                        <div className='col-md-6 col-lg-6'>
-                            <div>
-                                <div className='box-appointmet yellow'></div>
-                                &nbsp; Wednesday
+                        <div className='col-xs-4 col-md-6 col-lg-6'>
+                            <div className='box-wrap-toggle'>
+                                <div className='box-appt-wrap'>
+                                    {/* <div className='box-appointmet yellow'></div> */}
+                                    &nbsp; Wednesday
+                                </div>
+                                <Switch defaultChecked />
+                                <h4>Open</h4>
                             </div>
+
                         </div>
-                        <div className='col-md-6 col-lg-6'>
-                            <input type="time" id="appt" name="appt" />
+                        <div className='col-xs-8 col-lg-6'>
+                            &nbsp; From &nbsp;<input type="time" id="appt" name="appt" />
                             &nbsp; to &nbsp;<input type="time" id="appt" name="appt" />
                         </div>
                     </div>
                     <div className='row margin-appoint'>
-                        <div className='col-md-6 col-lg-6'>
-                            <div>
-                                <div className='box-appointmet yellow'></div>
-                                &nbsp; Thursday
+                        <div className='col-xs-4 col-md-6 col-lg-6'>
+                            <div className='box-wrap-toggle'>
+                                <div className='box-appt-wrap'>
+                                    {/* <div className='box-appointmet yellow'></div> */}
+                                    &nbsp; Thursday
+                                </div>
+                                <Switch defaultChecked />
+                                <h4>Open</h4>
                             </div>
+
                         </div>
-                        <div className='col-md-6 col-lg-6'>
-                            <input type="time" id="appt" name="appt" />
+                        <div className='col-xs-8 col-lg-6'>
+                            &nbsp; From &nbsp;<input type="time" id="appt" name="appt" />
                             &nbsp; to &nbsp;<input type="time" id="appt" name="appt" />
                         </div>
                     </div>
                     <div className='row margin-appoint'>
-                        <div className='col-md-6 col-lg-6'>
-                            <div>
-                                <div className='box-appointmet yellow'></div>
-                                &nbsp; Friday
+                        <div className='col-xs-4 col-md-6 col-lg-6'>
+                            <div className='box-wrap-toggle'>
+                                <div className='box-appt-wrap'>
+                                    {/* <div className='box-appointmet yellow'></div> */}
+                                    &nbsp; Friday
+                                </div>
+                                <Switch defaultChecked />
+                                <h4>Open</h4>
                             </div>
                         </div>
-                        <div className='col-md-6 col-lg-6'>
-                            <input type="time" id="appt" name="appt" />
+                        <div className='col-xs-8 col-lg-6'>
+                            &nbsp; From &nbsp;<input type="time" id="appt" name="appt" />
                             &nbsp; to &nbsp;<input type="time" id="appt" name="appt" />
                         </div>
                     </div>
                     <div className='row margin-appoint'>
-                        <div className='col-md-6 col-lg-6'>
-                            <div>
-                                <div className='box-appointmet white'></div>
-                                &nbsp; Saturday
+                        <div className='col-xs-4 col-md-6 col-lg-6'>
+                            <div className='box-wrap-toggle'>
+                                <div className='box-appt-wrap'>
+                                    {/* <div className='box-appointmet white'></div> */}
+                                    &nbsp; Saturday
+                                </div>
+                                <Switch defaultChecked />
+                                <h4>Open</h4>
                             </div>
                         </div>
-                        <div className='col-md-6 col-lg-6'>
-                            <input type="time" id="appt" name="appt" />
+                        <div className='col-xs-8 col-lg-6'>
+                            &nbsp; From &nbsp;<input type="time" id="appt" name="appt" />
                             &nbsp; to &nbsp;<input type="time" id="appt" name="appt" />
                         </div>
                     </div>
                     <div className='row margin-appoint'>
-                        <div className='col-md-6 col-lg-6'>
-                            <div>
-                                <div className='box-appointmet white'></div>
-                                &nbsp; Sunday
+                        <div className='col-xs-4 col-md-6 col-lg-6'>
+                            <div className='box-wrap-toggle'>
+                                <div className='box-appt-wrap'>
+                                    {/* <div className='box-appointmet white'></div> */}
+                                    &nbsp; Sunday
+                                </div>
+                                <Switch defaultChecked />
+                                <h4>Open</h4>
                             </div>
                         </div>
-                        <div className='col-md-6 col-lg-6'>
-                            <input type="time" id="appt" name="appt" />
+                        <div className='col-xs-8 col-lg-6'>
+                            &nbsp; From &nbsp;<input type="time" id="appt" name="appt" />
                             &nbsp; to &nbsp;<input type="time" id="appt" name="appt" />
                         </div>
                     </div>

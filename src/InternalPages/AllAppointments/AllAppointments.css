@@ -1,48 +1,55 @@
-.appointment-box{
-    background: #FFFFFF;
-    border-radius: 10px;
-    padding: 20px;
-    /* width: 70%; */
+.appointment-box {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 36px;
+  /* width: 70%; */
 }
 
-.appointment-form{
-    text-align: center;
+.appointment-form {
+  text-align: center;
+  margin-bottom: 36px;
 }
 
-.appointment-input{
-    border-color: darkgrey;
-    border-radius: 5px;
+.appointment-input {
+  border-radius: 5px;
+  padding: 8px 16px;
+  border: 1px solid darkgrey;
 }
 
-.input-style{
-    width: 80px;
-    height: 40px;
+.input-style {
+  width: 80px;
+  height: 40px;
 }
 
-.input-style-slot{
-    width: 80px;
-    height: 40px;
+.input-style-slot {
+  width: 80px;
+  height: 40px;
 }
 
-.appoint-week{
-    margin-top: 50px;
-    border: 2px solid grey;
-    border-radius: 10px;
+.appoint-week {
+  margin-top: 50px;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+.appoint-week input {
+  padding: 8px 16px;
+  border: 1px solid grey;
+  border-radius: 5px;
 }
 
-.margin-appoint{
-    margin: 20px;
-    width: 100%;
-    margin-left: 10%;
+.margin-appoint {
+  margin: 20px;
+  margin-left: 10%;
 }
 
-.box-appointmet{
-    float: left;
+.box-appointmet {
+  float: left;
   height: 20px;
   width: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   border: 1px solid black;
   clear: both;
+  flex-shrink: 0;
 }
 
 .yellow {
@@ -50,50 +57,130 @@
 }
 
 .white {
-    background-color: white;
+  background-color: white;
 }
 
-.back-btn{
-    background-color: #FFFFFF;
+.back-btn {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  width: 150px;
+  border-radius: 10px;
+  height: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.confirm-btn {
+  background-color: #3c30e7;
+  color: #ffffff;
+  border: none;
+  width: 150px;
+  border-radius: 10px;
+  height: 30px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.centerText {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.centerText p {
+  margin-bottom: 0px;
+  margin-right: 16px;
+}
+.centerText input {
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: 1px solid darkgrey;
+}
+.box-appt-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  white-space: nowrap;
+  min-width: 200px;
+}
+@media screen and (max-width: 990px) {
+  .margin-appoint {
+    margin: 20px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 640px) {
+  .appoint-week input {
+    padding: 6px 10px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .margin-appoint {
+    margin-left: 8px;
+  }
+  .appointment-box {
+    padding: 16px;
+  }
+  .appoint-week input {
+    padding: 4px 8px;
+    border: 1px solid grey;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .margin-appoint {
+    margin: 16px 0;
+    width: auto;
+  }
+  .appoint-week input {
+    padding: 4px;
+  }
+  .appointment-form input {
+    width: 100%;
+  }
+  .appointment-form {
+    margin-bottom: 16px;
+  }
+  .centerText {
+    margin-bottom: 8px;
+  }
+  .appoint-week {
+    margin-top: 24px;
+  }
+  .centerText {
+    justify-content: flex-start;
+  }
+  .centerText p {
+    margin-bottom: 0px;
+    margin-right: 4px;
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 420px) {
+  .appoint-week input {
+    padding: 0px;
+    width: 80px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .vertical-center {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 10%;
+    /* -ms-transform: translateY(50%);
+        transform: translateY(50%); */
+  }
+  .back-btn {
+    background-color: #ffffff;
     color: #000000;
     border: none;
-    width: 150px;
-    border-radius: 10px;
-    height: 30px;
-    font-size: 15px;
-    font-weight: 600;
-    margin: 10px;
-}
+  }
 
-.confirm-btn{
+  .confirm-btn {
     background-color: #3c30e7;
-    color: #FFFFFF;
+    color: #ffffff;
     border: none;
-    width: 150px;
-    border-radius: 10px;
-    height: 30px;
-    font-size: 15px;
-    font-weight: 600;
-}
-
-@media screen and (max-width: 375px){
-    .vertical-center {
-        margin: 0;
-        position: relative;
-        top: 50%;
-        left: 10%;
-        /* -ms-transform: translateY(50%);
-        transform: translateY(50%); */
-    }
-    .back-btn{
-        background-color: #FFFFFF;
-        color: #000000;
-        border: none;
-    }
-    
-    .confirm-btn{
-        background-color: #3c30e7;
-        color: #FFFFFF;
-        border: none;
-    }    
+  }
 }

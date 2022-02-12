@@ -8,7 +8,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Footer from '../../Component/Footer';
-import Header from '../../Component/Header';
+import ConditionalHeader from '../../Component/conditional-header/ConditionalHeader';
 import "./billing.css"
 
 function TabPanel(props) {
@@ -58,7 +58,7 @@ export default function FullWidthTabs() {
 
   return (
     <div>
-    <Header/>
+    <ConditionalHeader/>
     <Box sx={{ bgcolor: 'background.paper', width: 500 }}>
       <div class="head-wrap">
         <h2 class="center-txt">Billing Info</h2>
