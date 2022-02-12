@@ -67,3 +67,7 @@
         border: none;
     }    
 }
+
+.input-width{
+    width: 100%;
+}

@@ -3,11 +3,12 @@ import './AllAppointments.css'
 import Footer from '../../Component/Footer';
 import Header from '../../Component/Header';
 import { Switch } from '@mui/material';
+import ConditionalHeader from '../../Component/conditional-header/ConditionalHeader';
 
 const AllAppointments = () => {
     return (
         <>
-            <Header />
+            <ConditionalHeader />
             <h2 className='h2-tag'>Account Info</h2>
             <div className='container appointment-box'>
                 <div>

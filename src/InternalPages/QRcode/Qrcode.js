@@ -10,13 +10,12 @@ import TableRow from '@mui/material/TableRow';
 import Header from '../../Component/Header';
 import Footer from '../../Component/Footer';
 import "./qrcode.css"
+import ConditionalHeader from '../../Component/conditional-header/ConditionalHeader';
 
 const Qrcode = () => {
-
-
     return (
         <>
-            <Header />
+            <ConditionalHeader />
             <div>
                 <div className='container heading'>
                     <h2>Your shareable QR Code</h2>

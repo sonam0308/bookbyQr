@@ -10,6 +10,7 @@ import TableRow from '@mui/material/TableRow';
 import Header from '../../Component/Header';
 import Footer from '../../Component/Footer';
 import './Schedule.css'
+import ConditionalHeader from '../../Component/conditional-header/ConditionalHeader';
 
 const columns = [
     { id: 'name', label: 'Name', minWidth: 170 },
@@ -78,7 +79,7 @@ const Schedules = () => {
     };
     return (
         <>
-            <Header />
+            <ConditionalHeader />
             <div className='container heading'>
                 <h2>Your Schedules</h2>
                 <hr className='hr'/>
