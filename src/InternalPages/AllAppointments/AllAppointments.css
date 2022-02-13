@@ -108,6 +108,21 @@
     margin: 20px;
     width: auto;
   }
+  .box-appt-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    white-space: nowrap;
+    min-width: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .margin-appoint {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+  }
 }
 @media screen and (max-width: 640px) {
   .appoint-week input {
