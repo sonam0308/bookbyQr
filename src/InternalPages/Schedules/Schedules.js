@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import axios from 'axios';
+import React, { useState, useEffect } from 'react';
 import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -7,10 +8,18 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
+
+import Button from '@mui/material/Button';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogTitle from '@mui/material/DialogTitle';
+
 import Header from '../../Component/Header';
 import Footer from '../../Component/Footer';
 import './Schedule.css'
 import ConditionalHeader from '../../Component/conditional-header/ConditionalHeader';
+import { InputLabel, MenuItem, Select, TextField } from '@mui/material';
 
 const columns = [
     { id: 'name', label: 'Name', minWidth: 170 },
@@ -64,7 +73,7 @@ const Schedules = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0)
-      }, [])
+    }, [])
 
     const [page, setPage] = React.useState(0);
     const [rowsPerPage, setRowsPerPage] = React.useState(10);
@@ -77,13 +86,72 @@ const Schedules = () => {
         setRowsPerPage(+event.target.value);
         setPage(0);
     };
+
+    const [open, setOpen] = React.useState(false);
+    const [fullWidth, setFullWidth] = React.useState(true);
+    const [maxWidth, setMaxWidth] = React.useState('md');
+
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+
+    const handleMaxWidthChange = (event) => {
+        setMaxWidth(
+            // @ts-expect-error autofill of arbitrary value is not handled.
+            event.target.value,
+        );
+    };
+
+    const handleFullWidthChange = (event) => {
+        setFullWidth(event.target.checked);
+    };
+
+
+    const [title, setTitle] = useState('')
+    const [start_time, setStartTime] = useState('')
+    const [end_time, setEndTime] = useState('')
+    const [start_date, setStartDate] = useState('')
+    const [end_date, setEndDate] = useState('')
+    const [slot, setSlot] = useState('')
+    const [seats, setSeats] = useState('')
+    const [days, setDays] = useState('')
+    // const [phone_number, setPhone] = useState('')
+    // const [freePlan, setFreePlan] = useState('')
+    // const [termsOfService, setTermService] = useState('')
+
+    const onFormSubmit = async (e) => {
+        console.log('working');
+        e.preventDefault();
+        try {
+            let body = {
+                title: title,
+                start_time: start_time,
+                end_time: end_time,
+            }
+            let response = await axios.post(process.env.REACT_APP_BASE_URL + '/UserAppointmentSchedule', body, { mode: 'cors' })
+                .then((res) => res.json())
+                .then((resp) => {
+                    console.log(resp);
+                })
+            console.log(response);
+            setTitle('')
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+
     return (
         <>
             <ConditionalHeader />
             <div className='container heading'>
                 <h2>Your Schedules</h2>
-                <hr className='hr'/>
-                <button className="button">Add Schedules</button>
+                <hr className='hr' />
+                <button className="button" onClick={handleClickOpen}>Add Schedules</button>
                 {/* </div>
                 <div className='container'> */}
                 <Paper sx={{ width: '100%', overflow: 'hidden' }}>
@@ -132,10 +200,84 @@ const Schedules = () => {
                         page={page}
                         onPageChange={handleChangePage}
                         onRowsPerPageChange={handleChangeRowsPerPage}
-                        style={{fontSize: '15px'}}
+                        style={{ fontSize: '15px' }}
                     />
-                </Paper>                
-                </div>
+                </Paper>
+                <Dialog
+                    fullWidth={fullWidth}
+                    maxWidth={maxWidth}
+                    open={open}
+                    onClose={handleClose}
+                >
+                    <DialogActions>
+                        <Button onClick={handleClose}>Close</Button>
+                    </DialogActions>
+                    <DialogTitle className='center-head'>Make Your Schedule</DialogTitle>
+                    <DialogContent>
+                        <form action="" onSubmit={onFormSubmit}>
+                            <div className="row">
+                                <div className="col-sm-12">
+                                    <TextField id="outlined-basic"
+                                        onChange={(e) => { setTitle(e.target.value) }}
+                                        value={title} className='schedule-field' label="Title" variant="outlined" />
+                                </div>
+                                <div className="col-sm-6">
+                                    <TextField id="outlined-basic"
+                                        onChange={(e) => { setStartTime(e.target.value) }}
+                                        value={start_time} type="time" className='schedule-field' label="Start Time" variant="outlined" />
+                                </div>
+                                <div className="col-sm-6">
+                                    <TextField id="outlined-basic"
+                                        onChange={(e) => { setEndTime(e.target.value) }}
+                                        value={end_time} type="time" className='schedule-field' label="End Time" variant="outlined" />
+                                </div>
+                                <div className="col-sm-6">
+                                    {/* <InputLabel id="demo-simple-select-helper-label">Age</InputLabel> */}
+                                    <Select className='sch-select'
+                                        id="demo-simple-select"
+                                        label="Slot"
+                                        value={slot}
+                                        onChange={(e) => { setSlot(e.target.value) }}
+                                    >
+                                        <MenuItem value="">
+                                            <em>Slot</em>
+                                        </MenuItem>
+                                        <MenuItem value={10}>Ten</MenuItem>
+                                        <MenuItem value={20}>Twenty</MenuItem>
+                                        <MenuItem value={30}>Thirty</MenuItem>
+                                    </Select>
+                                </div>
+                                <div className="col-sm-6">
+                                    <TextField id="outlined-basic"
+                                        onChange={(e) => { setSeats(e.target.value) }}
+                                        value={seats} className='schedule-field' type="number" label="Total Seats" variant="outlined" />
+                                </div>
+                                <div className="col-sm-6">
+                                    <TextField id="outlined-basic"
+                                        onChange={(e) => { setStartDate(e.target.value) }}
+
+                                        type="date" value={start_date} className='schedule-field' label="From" variant="outlined" />
+                                </div>
+                                <div className="col-sm-6">
+                                    <TextField id="outlined-basic" type="date"
+                                        onChange={(e) => { setEndDate(e.target.value) }}
+
+                                        value={end_date} className='schedule-field' label="To" variant="outlined" />
+                                </div>
+                                <div className="col-sm-12">
+                                    <TextField id="outlined-basic" className='schedule-field' label="Days" variant="outlined" />
+                                </div>
+                                <div className="col-sm-12">
+                                    <div className="sch-popup-btn">
+                                        <button className="button btn-add">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </DialogContent>
+
+                </Dialog>
+            </div>
             {/* </div> */}
             <Footer />
         </>
@@ -143,3 +285,7 @@ const Schedules = () => {
 };
 
 export default Schedules;
+
+
+
+
