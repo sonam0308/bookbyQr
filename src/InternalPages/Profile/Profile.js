@@ -31,7 +31,7 @@ const Profile = () => {
             <h2 className='h2-tag'>Account Info</h2>
             <div className='container profile-box'>
                 <div className='row'>
-                    <div className='col-md-4 col-lg-3 col-sm-2 col-xs-6'>
+                    <div className='col-md-4 col-lg-3  col-xs-6'>
                         <div style={{ display: 'flex' }}>
                             <div>
                                 <h5>Name:</h5>
@@ -55,7 +55,7 @@ const Profile = () => {
                             }
                         </div>
                     </div>
-                    <div className='col-md-4 col-lg-5 col-sm-2 col-xs-12'>
+                    <div className='col-md-4 col-lg-5  col-xs-12'>
                         <div style={{ display: 'flex' }}>
                             <div>
                                 <h5>Business Name:</h5>
@@ -78,7 +78,7 @@ const Profile = () => {
                             }
                         </div>
                     </div>
-                    <div className='col-md-4 col-lg-4 col-sm-2 col-xs-12'>
+                    <div className='col-md-4 col-lg-4  col-xs-12'>
                         <div style={{ display: 'flex' }}>
                             <div>
                                 <h5>Email:</h5>
@@ -103,7 +103,7 @@ const Profile = () => {
                     </div>
                 </div>
                 <div className='row'>
-                    <div className='col-md-4 col-lg-3 col-sm-2 col-xs-12'>
+                    <div className='col-md-4 col-lg-3  col-xs-12'>
                         <div style={{ display: 'flex' }}>
                             <div>
                                 <h5>Phone:</h5>
@@ -126,7 +126,7 @@ const Profile = () => {
                             }
                         </div>
                     </div>
-                    <div className='col-md-4 col-lg-5 col-sm-2 col-xs-12'>
+                    <div className='col-md-4 col-lg-5  col-xs-12'>
                         <div style={{ display: 'flex' }}>
                             <div>
                                 <h5>Address:</h5>
@@ -151,7 +151,7 @@ const Profile = () => {
                             }
                         </div>
                     </div>
-                    <div className='col-md-4 col-lg-4 col-sm-2 col-xs-12'>
+                    <div className='col-md-4 col-lg-4  col-xs-12'>
                         <div style={{ display: 'flex' }}>
                             <div>
                                 <h5>Website:</h5>
@@ -176,7 +176,7 @@ const Profile = () => {
                     </div>
                 </div>
                 <div className='row'>
-                    <div className='col-md-4 col-lg-3 col-sm-2 col-xs-12'>
+                    <div className='col-md-4 col-lg-3  col-xs-12'>
                         <div style={{ display: 'flex' }}>
                             <div>
                                 <h5>Plan:</h5>
@@ -186,7 +186,7 @@ const Profile = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='col-md-4 col-lg-5 col-sm-2 col-xs-12'>
+                    <div className='col-md-4 col-lg-5  col-xs-12'>
                         <div style={{ display: 'flex' }}>
                             <div>
                                 <h5>Receive Promotion Mails:</h5>
@@ -196,7 +196,7 @@ const Profile = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='col-md-4 col-lg-4 col-sm-2 col-xs-12'>
+                    <div className='col-md-4 col-lg-4  col-xs-12'>
                         <div style={{ display: 'flex' }}>
                             <div>
                                 <h5>Receive Newsletter:</h5>
@@ -208,7 +208,7 @@ const Profile = () => {
                     </div>
                 </div>
                 <div className='row'>
-                    <div className='col-md-4 col-lg-3 col-sm-2 col-xs-12'>
+                    <div className='col-md-4 col-lg-3  col-xs-12'>
                         <div style={{ display: 'flex' }}>
                             <div>
                                 <h5>Member Since:</h5>
@@ -218,7 +218,7 @@ const Profile = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='col-md-4 col-lg-5 col-sm-2 col-xs-12'>
+                    <div className='col-md-4 col-lg-5  col-xs-12'>
                         <div style={{ display: 'flex' }}>
                             <div>
                                 <h5>Your Personal Link:</h5>

@@ -38,7 +38,7 @@ const AllAppointments = () => {
                 </div>
                 <div className='appoint-week'>
                     <div className='row margin-appoint'>
-                        <div className='col-xs-4 col-md-6 col-lg-6'>
+                        <div className='col-sm-4 col-md-6 col-lg-6'>
                             <div className='box-wrap-toggle'>
                                 <div className='box-appt-wrap'>
                                     {/* <div className='box-appointmet yellow'></div> */}
@@ -49,13 +49,13 @@ const AllAppointments = () => {
                             </div>
 
                         </div>
-                        <div className='col-xs-8 col-lg-6'>
+                        <div className='col-sm-12 col-md-6 col-lg-6'>
                             &nbsp; From &nbsp;<input type="time" id="appt" name="appt" />
                             &nbsp; to &nbsp;<input type="time" id="appt" name="appt" />
                         </div>
                     </div>
                     <div className='row margin-appoint'>
-                        <div className='col-xs-4 col-md-6 col-lg-6'>
+                        <div className='col-sm-4 col-md-6 col-lg-6'>
                             <div className='box-wrap-toggle'>
                                 <div className='box-appt-wrap'>
                                     {/* <div className='box-appointmet yellow'></div> */}
@@ -66,13 +66,13 @@ const AllAppointments = () => {
                             </div>
 
                         </div>
-                        <div className='col-xs-8 col-lg-6'>
+                        <div className='col-sm-12 col-md-6 col-lg-6'>
                             &nbsp; From &nbsp;<input type="time" id="appt" name="appt" />
                             &nbsp; to &nbsp;<input type="time" id="appt" name="appt" />
                         </div>
                     </div>
                     <div className='row margin-appoint'>
-                        <div className='col-xs-4 col-md-6 col-lg-6'>
+                        <div className='col-sm-4 col-md-6 col-lg-6'>
                             <div className='box-wrap-toggle'>
                                 <div className='box-appt-wrap'>
                                     {/* <div className='box-appointmet yellow'></div> */}
@@ -83,13 +83,13 @@ const AllAppointments = () => {
                             </div>
 
                         </div>
-                        <div className='col-xs-8 col-lg-6'>
+                        <div className='col-sm-12 col-md-6 col-lg-6'>
                             &nbsp; From &nbsp;<input type="time" id="appt" name="appt" />
                             &nbsp; to &nbsp;<input type="time" id="appt" name="appt" />
                         </div>
                     </div>
                     <div className='row margin-appoint'>
-                        <div className='col-xs-4 col-md-6 col-lg-6'>
+                        <div className='col-sm-4 col-md-6 col-lg-6'>
                             <div className='box-wrap-toggle'>
                                 <div className='box-appt-wrap'>
                                     {/* <div className='box-appointmet yellow'></div> */}
@@ -100,13 +100,13 @@ const AllAppointments = () => {
                             </div>
 
                         </div>
-                        <div className='col-xs-8 col-lg-6'>
+                        <div className='col-sm-12 col-md-6 col-lg-6'>
                             &nbsp; From &nbsp;<input type="time" id="appt" name="appt" />
                             &nbsp; to &nbsp;<input type="time" id="appt" name="appt" />
                         </div>
                     </div>
                     <div className='row margin-appoint'>
-                        <div className='col-xs-4 col-md-6 col-lg-6'>
+                        <div className='col-sm-4 col-md-6 col-lg-6'>
                             <div className='box-wrap-toggle'>
                                 <div className='box-appt-wrap'>
                                     {/* <div className='box-appointmet yellow'></div> */}
@@ -116,13 +116,13 @@ const AllAppointments = () => {
                                 <h4>Open</h4>
                             </div>
                         </div>
-                        <div className='col-xs-8 col-lg-6'>
+                        <div className='col-sm-12 col-md-6 col-lg-6'>
                             &nbsp; From &nbsp;<input type="time" id="appt" name="appt" />
                             &nbsp; to &nbsp;<input type="time" id="appt" name="appt" />
                         </div>
                     </div>
                     <div className='row margin-appoint'>
-                        <div className='col-xs-4 col-md-6 col-lg-6'>
+                        <div className='col-sm-4 col-md-6 col-lg-6'>
                             <div className='box-wrap-toggle'>
                                 <div className='box-appt-wrap'>
                                     {/* <div className='box-appointmet white'></div> */}
@@ -132,13 +132,13 @@ const AllAppointments = () => {
                                 <h4>Open</h4>
                             </div>
                         </div>
-                        <div className='col-xs-8 col-lg-6'>
+                        <div className='col-sm-12 col-md-6 col-lg-6'>
                             &nbsp; From &nbsp;<input type="time" id="appt" name="appt" />
                             &nbsp; to &nbsp;<input type="time" id="appt" name="appt" />
                         </div>
                     </div>
                     <div className='row margin-appoint'>
-                        <div className='col-xs-4 col-md-6 col-lg-6'>
+                        <div className='col-sm-4 col-md-6 col-lg-6'>
                             <div className='box-wrap-toggle'>
                                 <div className='box-appt-wrap'>
                                     {/* <div className='box-appointmet white'></div> */}
@@ -148,7 +148,7 @@ const AllAppointments = () => {
                                 <h4>Open</h4>
                             </div>
                         </div>
-                        <div className='col-xs-8 col-lg-6'>
+                        <div className='col-sm-12 col-md-6 col-lg-6'>
                             &nbsp; From &nbsp;<input type="time" id="appt" name="appt" />
                             &nbsp; to &nbsp;<input type="time" id="appt" name="appt" />
                         </div>
