@@ -20,6 +20,7 @@ import Footer from '../../Component/Footer';
 import './Schedule.css'
 import ConditionalHeader from '../../Component/conditional-header/ConditionalHeader';
 import { InputLabel, MenuItem, Select, TextField } from '@mui/material';
+import AllAppointments from '../AllAppointments/AllAppointments';
 
 const columns = [
     { id: 'name', label: 'Name', minWidth: 170 },
@@ -218,8 +219,9 @@ const Schedules = () => {
                     <DialogActions>
                         <Button onClick={handleClose}>Close</Button>
                     </DialogActions>
-                    <DialogTitle className='center-head'>Make Your Schedule</DialogTitle>
-                    <DialogContent>
+                    {/* <DialogTitle className='center-head'>Make Your Schedule</DialogTitle> */}
+                    <AllAppointments/>
+                    {/* <DialogContent>
                         <form action="" onSubmit={onFormSubmit}>
                             <div className="row">
                                 <div className="col-sm-12">
@@ -238,7 +240,6 @@ const Schedules = () => {
                                         value={end_time} type="time" className='schedule-field' label="End Time" variant="outlined" />
                                 </div>
                                 <div className="col-sm-6">
-                                    {/* <InputLabel id="demo-simple-select-helper-label">Age</InputLabel> */}
                                     <Select className='sch-select'
                                         id="demo-simple-select"
                                         label="Slot"
@@ -280,7 +281,7 @@ const Schedules = () => {
                                 </div>
                             </div>
                         </form>
-                    </DialogContent>
+                    </DialogContent> */}
 
                 </Dialog>
             </div>

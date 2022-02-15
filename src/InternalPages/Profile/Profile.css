@@ -2,6 +2,7 @@
     background: #FFFFFF;
     border-radius: 10px;
     padding: 20px;
+    /* width: auto; */
 }
 .h2-tag{
     text-align: center;
@@ -35,6 +36,18 @@
     margin: 10px;
 }
 
+.plan-btn{
+    background-color: #e7ca15;
+    color: #3c30e7;
+    border: none;
+    width: 150px;
+    border-radius: 10px;
+    height: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px;
+}
+
 .delete-btn{
     background-color: #bd3f36;
     color: #FFFFFF;
@@ -44,6 +57,18 @@
     height: 30px;
     font-size: 15px;
     font-weight: 600;
+}
+
+.address-btn{
+    background-color: #FFFFFF;
+    color: #3c30e7;
+    border: none;
+    width: 150px;
+    border-radius: 10px;
+    height: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px;
 }
 
 @media screen and (max-width: 375px){
@@ -70,4 +95,8 @@
 
 .input-width{
     width: 100%;
+}
+
+.profile-border{
+    border: 2px solid black;
 }

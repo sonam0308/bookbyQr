@@ -5,8 +5,8 @@ import Header from '../../Component/Header';
 import '../Signup/Signup.css'
 const Login = () => {
 
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
+  const [phone_number, setPhone] = useState('')
+  const [otp, setOtp] = useState('')
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -32,19 +32,22 @@ const Login = () => {
         </div>
         <div className="right">
           <div className="inputs">
-            <input type="email" placeholder="Email"
-              name="email" value={email}
-              onChange={(e) => { setEmail(e.target.value) }} />
+            <input type="tel" placeholder="Phone"
+              name="phone_number" value={phone_number}
+              onChange={(e) => { setPhone(e.target.value) }} />
             <br />
-            <input type="password" placeholder="Password"
-              name="password" value={password}
-              onChange={(e) => { setPassword(e.target.value) }} />
+            <br/>
+            <div style={{display: 'flex'}}>
+            <button className="secondary">Send OTP</button>
+            <input  className='partion-input' value='0123456' maxLength="4"/>
+            </div>
+            
           </div>
           <br />
           <div className="remember-me--forget-password">
             <p>Forgot Password?</p>
           </div>
-          <Link to="/schedules"><button>Login</button></Link>
+          <Link to="/schedules"><button className='signup-button'>Login</button></Link>
           <div className="new-user">
             New to BookByQr?<Link to="/register"> Signup Now For Free</Link>
           </div>

@@ -91,15 +91,17 @@ const Signup = () => {
                 name="address" value={address}
                 onChange={(e) => { setAddress(e.target.value) }} />
               <br />
-              <input type="password" placeholder="Password"
+              {/* <input type="password" placeholder="Password"
                 name="password" value={password}
                 onChange={(e) => { setPassword(e.target.value) }} />
-              <br />
+              <br /> */}
               <input type="tel" placeholder="Phone"
                 name="phone_number" value={phone_number}
                 onChange={(e) => { setPhone(e.target.value) }} />
             </div>
-            <br /><br />
+            <br />
+            <button className="secondary">Send OTP</button>
+            <br />
             <div className="remember-me--forget-password">
               <label>
                 <input type="checkbox"
@@ -118,7 +120,7 @@ const Signup = () => {
             </div>
           
           <br />
-          <button type='submit'>Sign Up</button>
+          <button type='submit' className='signup-button'>Sign Up</button>
           <div className="new-user">
             <Link to="/login">Already Registered? Login to BookByQr</Link>
           </div>
