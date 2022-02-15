@@ -111,7 +111,6 @@ const Schedules = () => {
         setFullWidth(event.target.checked);
     };
 
-
     const [title, setTitle] = useState('')
     const [start_time, setStartTime] = useState('')
     const [end_time, setEndTime] = useState('')
@@ -120,9 +119,16 @@ const Schedules = () => {
     const [slot, setSlot] = useState('')
     const [seats, setSeats] = useState('')
     const [days, setDays] = useState('')
-    // const [phone_number, setPhone] = useState('')
-    // const [freePlan, setFreePlan] = useState('')
-    // const [termsOfService, setTermService] = useState('')
+
+    // myschedule-data
+    const [scheduleData,setScheduleData]=useState([])
+
+    useEffect(async () => {
+        const response = await axios.get(process.env.REACT_APP_BASE_URL + '/UserAppointmentSchedule')
+        console.log(response)
+        setScheduleData(response.data.data.schedule)
+    }, [])
+    // myschedule-data-ends
 
     const onFormSubmit = async (e) => {
         console.log('working');
