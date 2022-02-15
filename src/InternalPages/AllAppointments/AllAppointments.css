@@ -7,13 +7,16 @@
 
 .appointment-form {
   text-align: center;
+  margin: auto;
   margin-bottom: 36px;
+  max-width: 600px;
 }
 
 .appointment-input {
   border-radius: 5px;
   padding: 8px 16px;
   border: 1px solid darkgrey;
+  width: 100%;
 }
 
 .input-style {
@@ -95,6 +98,7 @@
   padding: 8px 16px;
   border-radius: 5px;
   border: 1px solid darkgrey;
+  width: 200px;
 }
 .box-appt-wrap {
   display: flex;
@@ -105,7 +109,7 @@
 }
 @media screen and (max-width: 990px) {
   .margin-appoint {
-    margin: 20px;
+    margin: 8px;
     width: auto;
   }
   .box-appt-wrap {
@@ -119,14 +123,25 @@
 @media screen and (max-width: 768px) {
   .margin-appoint {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     margin-bottom: 24px;
+  }
+  .box-wrap-toggle h4 {
+    display: none;
   }
 }
 @media screen and (max-width: 640px) {
   .appoint-week input {
-    padding: 6px 10px;
+    padding: 4px;
+  }
+  .margin-appoint .col-sm-4 {
+    padding: 0;
+    white-space: nowrap;
+  }
+  .margin-appoint .col-sm-12 {
+    padding: 0;
+    white-space: nowrap;
   }
 }
 @media screen and (max-width: 580px) {
@@ -136,10 +151,8 @@
   .appointment-box {
     padding: 16px;
   }
-  .appoint-week input {
-    padding: 4px 8px;
-    border: 1px solid grey;
-    border-radius: 5px;
+  .schedule-box .MuiDialog-paperFullWidth {
+    margin: 0;
   }
 }
 
@@ -176,6 +189,9 @@
   .appoint-week input {
     padding: 0px;
     width: 80px;
+  }
+  .centerText input {
+    width: 150px;
   }
 }
 @media screen and (max-width: 375px) {
