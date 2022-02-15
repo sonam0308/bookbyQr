@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import OTPInput, { ResendOTP } from "otp-input-react";
 import Footer from '../../Component/Footer';
 import Header from '../../Component/Header';
 import '../Signup/Signup.css'
 const Login = () => {
 
   const [phone_number, setPhone] = useState('')
-  const [otp, setOtp] = useState('')
+  // const [OTP, setOTP] = useState("");
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -39,7 +40,8 @@ const Login = () => {
             <br/>
             <div style={{display: 'flex'}}>
             <button className="secondary">Send OTP</button>
-            <input  className='partion-input' value='0123456' maxLength="4"/>
+            <OTPInput className="otp-signup" autoFocus OTPLength={4} otpType="number" disabled={false} secure />
+            {/* <ResendOTP onResendClick={() => console.log("Resend clicked")} /> */}
             </div>
             
           </div>
@@ -60,3 +62,6 @@ const Login = () => {
 };
 
 export default Login;
+
+
+

@@ -23,7 +23,7 @@ const AllAppointments = () => {
                             <input type='date' placeholder='27/02/2020' /> &nbsp; to &nbsp; <input type='date' placeholder='27/02/2020' />
                         </div>
                     </div>
-                    <div className='col-xs-6'>
+                    <div className='col-md-6'>
                         <div className="centerText" style={{ display: 'flex' }}>
                             <p>Parallel Slots:</p> &nbsp;
                             <input type='text' placeholder='One' className='input-style' />
@@ -159,7 +159,6 @@ const AllAppointments = () => {
                     <button className='confirm-btn'>Confirm</button>
                 </div>
             </div>
-            <Footer />
         </>
     )
 };

@@ -215,6 +215,7 @@ const Schedules = () => {
                     maxWidth={maxWidth}
                     open={open}
                     onClose={handleClose}
+                    className="schedule-box"
                 >
                     <DialogActions>
                         <Button onClick={handleClose}>Close</Button>

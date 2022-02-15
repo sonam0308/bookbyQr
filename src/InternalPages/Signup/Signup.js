@@ -1,6 +1,8 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import OTPInput, { ResendOTP } from "otp-input-react";
+
 import Footer from '../../Component/Footer';
 import Header from '../../Component/Header';
 import './Signup.css'
@@ -100,7 +102,10 @@ const Signup = () => {
                 onChange={(e) => { setPhone(e.target.value) }} />
             </div>
             <br />
+            <div className="otp-wrap">
             <button className="secondary">Send OTP</button>
+            <OTPInput className="otp-signup" autoFocus OTPLength={4} otpType="number" disabled={false} secure />
+            </div>
             <br />
             <div className="remember-me--forget-password">
               <label>
