@@ -32,6 +32,7 @@ export default function Testimonial() {
 
                     <div className="" id="">
                         <div className="row carousel slide container carousel-container" id="testimonial-slider">
+                            {console.log(testimonialData)}
                             {
                                 testimonialData && testimonialData.map(data => (
                                     <div className="col-sm-4 col-md-3 col-lg-3">
