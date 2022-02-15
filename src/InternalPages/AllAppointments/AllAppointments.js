@@ -8,9 +8,9 @@ import ConditionalHeader from '../../Component/conditional-header/ConditionalHea
 const AllAppointments = () => {
     return (
         <>
-            <ConditionalHeader />
-            <h2 className='h2-tag'>Account Info</h2>
-            <div className='container appointment-box'>
+            {/* <ConditionalHeader /> */}
+            <h2 className='h2-tag'>All Schedules</h2>
+            <div className='container'>
                 <div>
                     <form className='appointment-form'>
                         <input type="text" placeholder='Scheduler Name' className='appointment-input' />

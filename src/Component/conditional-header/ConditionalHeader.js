@@ -74,7 +74,7 @@ const ConditionalHeader = () => {
                         <Link className="navbar-brand" to="/">
                             <img src="img/svg/logo.svg" className="logo" alt="ZASTA" />
                         </Link>
-                        <ul className='header-list'>
+                        {/* <ul className='header-list'>
                             <li>
                                 <Link className='header-links' to="/pricing">
                                     Pricing
@@ -95,7 +95,7 @@ const ConditionalHeader = () => {
                                     Contact Us
                                 </Link>
                             </li>
-                        </ul>
+                        </ul> */}
                     </div>
                     <div className='button-header-wrap'>
                         <div class="dropdown">
@@ -107,7 +107,8 @@ const ConditionalHeader = () => {
                                 variant="contained"
                                 disableElevation
                                 onClick={handleClick}
-                                endIcon={<KeyboardArrowDownIcon />}
+                                endIcon={<KeyboardArrowDownIcon />
+                                }
                             >
                                 Options
                             </Button>

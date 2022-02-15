@@ -3,7 +3,7 @@ import * as React from 'react';
 import Footer from '../../Component/Footer';
 import ConditionalHeader from '../../Component/conditional-header/ConditionalHeader';
 import "./reports.css"
-import { TextField } from '@mui/material';
+import { Button, TextField } from '@mui/material';
 
 
 
@@ -22,7 +22,7 @@ export default function Reports() {
                 </div>
                 <div className="box-iner-wrap">
                     <div className="row">
-                        <div className="col-sm-6">
+                        <div className="col-sm-6 col-xs-12">
                             <div className="head-box">Recharge Summary</div>
                             <TextField
                                 id="date"
@@ -44,9 +44,10 @@ export default function Reports() {
                                     shrink: true,
                                 }}
                             />
+                            <Button className="mail-button">Mail</Button>
                         </div>
 
-                        <div className="col-sm-6">
+                        <div className="col-sm-6 col-xs-12">
                             <div className="head-box">Booking Summary</div>
                             <TextField
                                 id="date"
@@ -68,6 +69,7 @@ export default function Reports() {
                                     shrink: true,
                                 }}
                             />
+                            <Button className="mail-button">Mail</Button>
                         </div>
                     </div>
                 </div>

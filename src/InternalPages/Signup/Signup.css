@@ -110,7 +110,7 @@
     font-size: 15px;
     font-weight: 600;
   }
-  .box-form .right button {
+  .box-form .right .signup-button {
     color: #3c30e7;
     font-size: 20px;
     font-weight: 900;
@@ -124,6 +124,20 @@
     background-image: linear-gradient(135deg, #e7ca15 10%, #e7ca15 100%);
   }
   
+.secondary{
+  color: #3c30e7;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 12px 35px;
+    border-radius: 5px;
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    /* width: 100%; */
+    /* box-shadow: 0px 4px 20px 0px blue; */
+    /* background-image: linear-gradient(135deg, #e7ca15 10%, #e7ca15 100%); */
+}
+
   .remember-me--forget-password label {
     display: flex;
     position: relative;
@@ -192,4 +206,23 @@
     margin-top: 10px;
     overflow: hidden;
     box-sizing: border-box;
+  }
+
+  .partion-input {
+    border: none;
+    width: 5.5ch;
+    background: 
+      repeating-linear-gradient(90deg, 
+          dimgrey 0, 
+          dimgrey 1ch, 
+          transparent 0, 
+          transparent 1.5ch) 
+        0 100%/100% 2px no-repeat;
+    color: dimgrey;
+    font: 5ch consolas, monospace;
+    letter-spacing: .5ch;
+  }
+  .partion-input:focus {
+    outline: none;
+    color: dodgerblue;
   }
