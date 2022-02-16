@@ -146,6 +146,16 @@
   position: relative;
   margin-left: 30px;
 }
+.remember-me--forget-password label input{
+  margin-top: 0 !important;
+}
+.remember-me--forget-password label{
+  min-width: 200px;
+  align-items: center;
+}
+.remember-me--forget-password label span.text-checkbox{
+  width: 200px;
+}
 
 /* .remember-me--forget-password label::before {
     content: ' \f00c';
@@ -240,4 +250,39 @@ label input[type="checkbox"] {
 .otp-wrap {
   display: flex;
   justify-content: center;
+}
+.check{
+  width: 19px !important;
+}
+.text-checkbox{
+  width: 100px !important;
+}
+.terms{
+  width: 198px !important;
+}
+
+@media (max-width: 786px) {
+  .box-form .right .remember-me--forget-password {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .check{
+    width: 19px !important;
+  }
+  .text-checkbox{
+    width: 100px !important;
+  }
+  .terms{
+    width: 198px !important;
+  }
+  .otp_btn{
+    padding: 11px 26px;
+    width: auto;
+    font-size: 16px;
+    min-width: 100px;
+  }
+  .head-mr{
+    margin: 0 30px;
+  }
 }
