@@ -1,0 +1,48 @@
+/* (A) LIST STYLES */
+.sortlist {
+    margin: 0 auto;
+    width: 50%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .sortlist-li {
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #dfdfdf;
+    background: #fff;
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+  /* .list-in{
+      display: flex;
+      justify-content: space-between;
+  } */
+.list-mn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+}
+.mb-0{
+    margin-bottom: 0;
+}
+.sortlist h3{
+    text-align: center;
+    margin: 10px auto;
+}
+  @media screen and (max-width: 768px) {
+
+    .sortlist{
+        width: 90%;
+    }
+
+    .sortlist-li {
+        margin: 10px;
+        padding: 15px;
+        border: 1px solid #dfdfdf;
+        background: #fff;
+        width: 100%;
+      }
+  }

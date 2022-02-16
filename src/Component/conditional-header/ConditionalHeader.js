@@ -99,7 +99,7 @@ const ConditionalHeader = () => {
                     </div>
                     <div className='button-header-wrap'>
                         <div class="dropdown">
-                            <Button className='button-header'
+                            <Button className='button-header resp-btn'
                                 id="demo-customized-button"
                                 aria-controls={open ? 'demo-customized-menu' : undefined}
                                 aria-haspopup="true"
@@ -154,7 +154,7 @@ const ConditionalHeader = () => {
 
                             </StyledMenu>
                         </div>
-                        <button className='button-header'>
+                        <button className='button-header resp-btn'>
                             Sign up
                         </button>
                     </div>
