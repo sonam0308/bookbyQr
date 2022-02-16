@@ -110,7 +110,7 @@ const Signup = () => {
             <div className="remember-me--forget-password">
               <label>
                 <input type="checkbox"
-                  checked={freePlan}
+                  checked="checked"
                   onChange={(e) => { setFreePlan(e.target.checked) }}
                 />
                 <span className="text-checkbox">Free Plan</span>
