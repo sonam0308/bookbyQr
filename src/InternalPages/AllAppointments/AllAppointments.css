@@ -7,7 +7,6 @@
 
 .appointment-form {
   text-align: center;
-  margin: auto;
   margin-bottom: 36px;
   max-width: 600px;
 }
@@ -42,7 +41,7 @@
 
 .margin-appoint {
   margin: 20px;
-  margin-left: 10%;
+  margin-left: 7%;
 }
 
 .box-appointmet {
@@ -87,7 +86,7 @@
   font-weight: 600;
 }
 .centerText {
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   margin-bottom: 24px;
 }
@@ -107,6 +106,21 @@
   justify-content: flex-start;
   white-space: nowrap;
   min-width: 200px;
+}
+.cust_btn{
+    color: #3c30e7 !important;
+    font-size: 16px !important;
+    font-weight: 900 !important;
+    padding: 12px 30px !important;
+    border-radius: 5px !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    border: 0;
+    outline: 0;
+    min-width: 120px;
+    background-image: linear-gradient( 135deg, #e7ca15 10%, #e7ca15 100% );
 }
 @media screen and (max-width: 990px) {
   .margin-appoint {
@@ -130,6 +144,9 @@
   }
   .box-wrap-toggle h4 {
     display: none;
+  }
+  .appointment-form{
+    margin: auto;
   }
 }
 @media screen and (max-width: 640px) {

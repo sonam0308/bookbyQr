@@ -54,7 +54,7 @@ const Signup = () => {
     <>
       <Header />
       <div style={{ textAlign: 'center', marginBottom: '35px' }}>
-        <h3>
+        <h3 className='head-mr'>
           REGISTER NOW FOR FREE AT BOOKBYQR
         </h3>
       </div>
@@ -103,24 +103,24 @@ const Signup = () => {
             </div>
             <br />
             <div className="otp-wrap">
-            <button className="secondary">Send OTP</button>
+            <button className="secondary otp_btn">Send OTP</button>
             <OTPInput className="otp-signup" autoFocus OTPLength={4} otpType="number" disabled={false} secure />
             </div>
             <br />
             <div className="remember-me--forget-password">
               <label>
-                <input type="checkbox"
+                <input type="checkbox" className='check'
                   checked="checked"
                   onChange={(e) => { setFreePlan(e.target.checked) }}
                 />
                 <span className="text-checkbox">Free Plan</span>
               </label>
               <label>
-                <input type="checkbox"
+                <input type="checkbox" className='check'
                   checked={termsOfService}
                   onChange={(e) => { setTermService(e.target.checked) }}
                 />
-                <span className="text-checkbox">Accept Terms of Service</span>
+                <span className="text-checkbox terms">Accept Terms of Service</span>
               </label>
             </div>
           

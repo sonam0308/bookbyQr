@@ -14,6 +14,7 @@ import Qrcode from './InternalPages/QRcode/Qrcode';
 import AllAppointments from './InternalPages/AllAppointments/AllAppointments';
 import Reports from './InternalPages/Reports/Reports';
 import Pricing from './Component/Pricing';
+import Appointment from './InternalPages/Appointments/Appointment';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path='/billing' component={FullWidthTabs}/>
         <Route path='/qrcode' component={Qrcode}/>
         <Route path='/appointment' component={AllAppointments}/>
+        <Route path='/allappointment' component={Appointment}/>
         <Route path='/pricing' component={Pricing}/>
         <Route path='/reports' component={Reports}/>
       </Switch>

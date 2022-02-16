@@ -241,7 +241,7 @@ const Profile = () => {
                         <div>
                             <h5>Subscription Details:</h5>
                             <div className="profile-border">
-                                <div style={{ display: 'flex' }}>
+                                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                                     <h5>Current Plan:</h5>
                                     <button className='plan-btn' >
                                         Free
@@ -250,7 +250,7 @@ const Profile = () => {
                                 <p>Your free forever plans gives you unlimited email OTP authentications
                                     of your customers when they book their appointments with you.
                                 </p>
-                                <div style={{ display: 'flex' }}>
+                                <div style={{ display: 'flex', justifyContent: 'space-between'  }}>
                                     <h5>Upgrade Your Plan:</h5>
                                     <button className='plan-btn' >
                                         Upgrade
@@ -261,7 +261,7 @@ const Profile = () => {
                                     OTP authentication of your customers when
                                     they book their appointments with you.
                                 </p>
-                                <div style={{ display: 'flex' }}>
+                                <div style={{ display: 'flex', justifyContent: 'space-between'  }}>
                                     <h5>Delete Your Account:</h5>
                                     <button className='plan-btn' >
                                         Delete

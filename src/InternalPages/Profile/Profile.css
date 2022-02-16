@@ -42,10 +42,11 @@
     border: none;
     width: 150px;
     border-radius: 10px;
-    height: 20px;
+    /* height: 20px; */
     font-size: 15px;
     font-weight: 600;
     margin: 10px;
+    padding: 5px;
 }
 
 .delete-btn{
@@ -76,20 +77,42 @@
         margin: 0;
         position: relative;
         top: 50%;
-        left: 10%;
+        left: 0;
         /* -ms-transform: translateY(50%);
         transform: translateY(50%); */
     }
     .edit-btn{
-        background-color: #3c30e7;
+        /* background-color: #3c30e7;
         color: #FFFFFF;
+        border: none; */
+        background-color: #e7ca15;
+        color: #3c30e7;
         border: none;
+        width: 150px;
+        border-radius: 10px;
+        /* height: 20px; */
+        font-size: 15px;
+        font-weight: 600;
+        margin: 10px;
+        padding: 5px;
+
     }
     
     .delete-btn{
-        background-color: #bd3f36;
+        /* background-color: #bd3f36;
         color: #FFFFFF;
+        border: none; */
+        background-color: #e7ca15;
+        color: #3c30e7;
         border: none;
+        width: 150px;
+        border-radius: 10px;
+        /* height: 20px; */
+        font-size: 15px;
+        font-weight: 600;
+        margin: 10px;
+        padding: 5px;
+
     }    
 }
 
@@ -99,4 +122,5 @@
 
 .profile-border{
     border: 2px solid black;
+    padding: 5px;
 }

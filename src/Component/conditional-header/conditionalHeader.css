@@ -67,3 +67,19 @@
     display: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .resp-btn {
+    width: 100px;
+    min-width: 50px;
+    padding: 10px !important;
+    display: flex !important;
+    font-size: 12px !important;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar-brand{
+    height: auto;
+  }
+}
