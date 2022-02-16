@@ -63,9 +63,10 @@
   background-color: white;
 }
 
-.back-btn {
-  background-color: #ffffff;
-  color: #000000;
+
+.edit-btn{
+  background-color: #3c30e7;
+  color: #FFFFFF;
   border: none;
   width: 150px;
   border-radius: 10px;
@@ -75,9 +76,9 @@
   margin: 10px;
 }
 
-.confirm-btn {
-  background-color: #3c30e7;
-  color: #ffffff;
+.delete-btn{
+  background-color: #bd3f36;
+  color: #FFFFFF;
   border: none;
   width: 150px;
   border-radius: 10px;

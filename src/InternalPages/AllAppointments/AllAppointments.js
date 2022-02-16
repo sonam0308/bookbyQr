@@ -155,8 +155,8 @@ const AllAppointments = () => {
                     </div>
                 </div>
                 <div className='vertical-center'>
-                    <button className='back-btn'>Back</button>
-                    <button className='confirm-btn'>Confirm</button>
+                    <button className='delete-btn'>Back</button>
+                    <button className='edit-btn'>Confirm</button>
                 </div>
             </div>
         </>
