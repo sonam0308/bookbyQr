@@ -122,7 +122,7 @@ const ConditionalHeader = () => {
                                 onClose={handleClose}
                             >
                                 <MenuItem onClick={handleClose} disableRipple>
-                                    <Link className='dropdown-header-list' to="/appointment">
+                                    <Link className='dropdown-header-list' to="/allappointment">
                                         View all Appointments
                                     </Link>
                                 </MenuItem>

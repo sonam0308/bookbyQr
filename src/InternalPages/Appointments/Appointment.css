@@ -25,12 +25,34 @@
     align-items: center;
     margin-left: 15px;
 }
-.mb-0{
+.time{
     margin-bottom: 0;
+    font-size: 16px;
 }
 .sortlist h3{
     text-align: center;
     margin: 10px auto;
+}
+
+.MuiListItemText-primary{
+  font-size: 16px !important;
+}
+.MuiListItemText-secondary{
+  font-size: 12px !important;
+}
+.date{
+  font-size: 12px !important;
+}
+.listItem{
+  border-bottom: 1px solid gray;
+}
+.mod_btn{
+  margin-top: 20px;
+}
+
+.mod_inp {margin: 20px auto;  }
+.mod_inp input{  
+  font-size: 16px;
 }
   @media screen and (max-width: 768px) {
 
