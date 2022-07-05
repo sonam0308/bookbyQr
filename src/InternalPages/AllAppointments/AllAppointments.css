@@ -64,7 +64,7 @@
 
 
 .edit-btn{
-  background-color: #3c30e7;
+  background-color: #3834b4 ;
   color: #FFFFFF;
   border: none;
   width: 150px;
@@ -108,7 +108,7 @@
   min-width: 200px;
 }
 .cust_btn{
-    color: #3c30e7 !important;
+    color: #3834b4  !important;
     font-size: 16px !important;
     font-weight: 900 !important;
     padding: 12px 30px !important;
@@ -120,7 +120,7 @@
     border: 0;
     outline: 0;
     min-width: 120px;
-    background-image: linear-gradient( 135deg, #e7ca15 10%, #e7ca15 100% );
+    background-image: linear-gradient( 135deg, #E7ca15 10%, #E7ca15 100% );
 }
 @media screen and (max-width: 990px) {
   .margin-appoint {
@@ -228,7 +228,7 @@
   }
 
   .confirm-btn {
-    background-color: #3c30e7;
+    background-color: #3834b4 ;
     color: #ffffff;
     border: none;
   }

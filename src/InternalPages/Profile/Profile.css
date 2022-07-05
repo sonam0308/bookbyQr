@@ -25,7 +25,7 @@
 }
 
 .edit-btn{
-    background-color: #3c30e7;
+    background-color: #3834b4 ;
     color: #FFFFFF;
     border: none;
     width: 150px;
@@ -37,8 +37,8 @@
 }
 
 .plan-btn{
-    background-color: #e7ca15;
-    color: #3c30e7;
+    background-color: #E7ca15;
+    color: #3834b4 ;
     border: none;
     width: 150px;
     border-radius: 10px;
@@ -62,7 +62,7 @@
 
 .address-btn{
     background-color: #FFFFFF;
-    color: #3c30e7;
+    color: #3834b4 ;
     border: none;
     width: 150px;
     border-radius: 10px;
@@ -82,11 +82,11 @@
         transform: translateY(50%); */
     }
     .edit-btn{
-        /* background-color: #3c30e7;
+        /* background-color: #3834b4 ;
         color: #FFFFFF;
         border: none; */
-        background-color: #e7ca15;
-        color: #3c30e7;
+        background-color: #E7ca15;
+        color: #3834b4 ;
         border: none;
         width: 150px;
         border-radius: 10px;
@@ -102,8 +102,8 @@
         /* background-color: #bd3f36;
         color: #FFFFFF;
         border: none; */
-        background-color: #e7ca15;
-        color: #3c30e7;
+        background-color: #E7ca15;
+        color: #3834b4 ;
         border: none;
         width: 150px;
         border-radius: 10px;

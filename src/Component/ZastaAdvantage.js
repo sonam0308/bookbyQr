@@ -3,7 +3,7 @@ import React from 'react'
 const ZastaAdvantage = () => {
     return (
         <div>
-            <div>
+            <div className='mt-50-all'>
                 <div className="container mit-zasta text-center">
                     <div className="row header">
                         <img src="img/svg/Zasta_Icons_Star.svg" className="Fill-1543" alt="Rakete" loading="lazy" />

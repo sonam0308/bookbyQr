@@ -20,7 +20,7 @@ export default function Testimonial() {
     }, [])
 
     console.log(testimonialData);
-    return <div>
+    return <div className='mt-100-all'>
         <div>
             <div>
                 <div className="container mit-zasta text-center">

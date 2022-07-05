@@ -85,7 +85,7 @@
             margin-top: 40px;
             display: block;
             text-transform: uppercase;
-            color: #e7ca15;
+            color: #E7ca15;
         }
         .navmenu .links {
             margin-top: 40px;
@@ -157,7 +157,7 @@
             border-radius: 100px 100px 0 0;
             display: block;
             margin: 0 auto;
-            background-color: #3c30e7;
+            background-color: #3834b4 ;
             font-size: 30px;
             font-weight: 900;
             color: #f4f4f4;
@@ -248,7 +248,7 @@
                     font-size: 18px;
                     line-height: 1.44;
                     letter-spacing: 0.6px;
-                    color: #e7ca15;
+                    color: #E7ca15;
                     text-transform: uppercase;
                     width: initial;
                     height: initial;
@@ -532,7 +532,7 @@
                 .footer h4.visible-xs {
                     position: absolute;
                     top: -67px;
-                    color: #3c30e7;
+                    color: #3834b4 ;
                     font-family: Lato;
                     font-size: 12px;
                     letter-spacing: 0.5px;
@@ -556,12 +556,12 @@
         .textpage .navbar {
             height: 70px;
             padding: 12px 0px;
-            border-bottom: solid 1px #3c30e7;
-            color: #3c30e7;
+            border-bottom: solid 1px #3834b4 ;
+            color: #3834b4 ;
             background: #f4f4f4;
         }
         .textpage .navbar-toggle .icon-bar {
-            background: #3c30e7;
+            background: #3834b4 ;
         }
         .textpage .navmenu .navbar-toggle .icon-bar {
             background: #f4f4f4;
