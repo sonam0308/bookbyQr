@@ -45,7 +45,7 @@ export default function Contact() {
   return <div id='contactus' className='mt-50-all'>
     <div className=" container contact-form">
       <div className="row">
-        <div className="col-md-6">
+        <div className="col-md-6 contact-img">
           <img src="/img/contact1.png" alt="contact-us" className='con-img' />
         </div>
         <div className="col-md-6">
@@ -55,7 +55,7 @@ export default function Contact() {
                 <Typography gutterBottom variant="h3" style={{fontFamily: 'Nunito'}}>
                   Send us a message
                 </Typography>
-                <Typography variant="body2" color="textSecondary" gutterBottom style={{fontFamily: 'Nunito', fontSize: '15px'}}>
+                <Typography variant="body2" color="textSecondary" gutterBottom className='submit-button'>
                   Fill up the form and our team will get back to you within 24 hours.
                 </Typography>
                 <form onSubmit={Registration}>
@@ -136,13 +136,13 @@ export default function Contact() {
                         disabled color="primary" 
                         size='large'
                         fullWidth
-                        style={{fontFamily: 'Nunito', fontSize: '15px', textAlign: 'center'}}
+                        className="submit-button"
                         >Submit</Button>
                       </Grid>
                         :
                         <Grid item xs={12}>
                           <Button type="submit" variant="contained" size='large' fullWidth
-                          style={{fontFamily: 'Nunito', fontSize: '15px',color: '#3834b4',
+                          style={{color: '#3834b4',
                            backgroundColor: '#E7ca15', fontWeight: '800'
                            }}>Submit</Button>
                         </Grid>
