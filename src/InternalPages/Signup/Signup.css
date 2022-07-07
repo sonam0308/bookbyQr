@@ -302,6 +302,10 @@ label input[type="checkbox"] {
     margin: 0 30px;
     font-weight: 900;
   }
+  .otp-wrap {
+    display: block;
+    justify-content: center;
+  }
 }
 
 .img-login{
