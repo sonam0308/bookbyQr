@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 16px;
   background-color: #f4f4f4;
   color: #36325d;
@@ -2765,7 +2765,8 @@ h2.margintop20 {
 }
 
 .con-img {
-  width: 80%;
+  width: 100%;
+  margin-top: 100px;
 }
 
 @media (max-width: 767px) {
