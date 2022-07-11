@@ -114,8 +114,8 @@ h2:after {
   background-position: 0;
 }
 .btn-primary {
-  background: #e7ca15;
-  color: #3c30e7;
+  background: #E7ca15;
+  color: #3834b4 ;
   font-weight: 900;
   padding: 19px 36px;
   border: 0;
@@ -746,7 +746,7 @@ svg.clip-svg {
   letter-spacing: 0.9px;
   /*            margin-top: 30px;*/
   padding-bottom: 38px;
-  color: #3c30e7;
+  color: #3834b4 ;
 }
 .was-macht-zasta h2:after,
 .container.main-content h2:after {
@@ -810,7 +810,7 @@ svg.clip-svg {
   width: 79px;
   height: 93px;
   border-radius: 0 0 100px 100px;
-  background-color: #3c30e7;
+  background-color: #3834b4 ;
   display: block;
   margin: 0 auto;
   padding-top: 22px;
@@ -822,7 +822,7 @@ svg.clip-svg {
   letter-spacing: 0.4px;
   margin-top: 21px;
   margin-bottom: 11px;
-  color: #3c30e7;
+  color: #3834b4 ;
   font-weight: normal;
 }
 .Group-6 {
@@ -884,7 +884,7 @@ svg.clip-svg {
 }
 .unser-zasta h2 {
   font-weight: 900;
-  color: #3c30e7;
+  color: #3834b4 ;
   margin-top: 30px;
   padding-bottom: 0;
 }
@@ -1055,7 +1055,7 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 .video-screen {
-  border: 2px solid #3c30e7;
+  border: 2px solid #3834b4 ;
   border-radius: 30px;
   overflow: hidden;
   transform: translate3d(0, 0, 0);
@@ -1120,7 +1120,7 @@ video::-webkit-media-controls-start-playback-button {
 .dashboard h3 {
   font-size: 18px;
   letter-spacing: 0.6px;
-  color: #3c30e7;
+  color: #3834b4 ;
   text-transform: uppercase;
   margin-top: 40px;
 }
@@ -1131,7 +1131,7 @@ video::-webkit-media-controls-start-playback-button {
   font-weight: 900;
   line-height: 1.13;
   letter-spacing: 1.1px;
-  color: #3c30e7;
+  color: #3834b4 ;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -1167,7 +1167,7 @@ video::-webkit-media-controls-start-playback-button {
   height: 80px;
 }
 .zasta-coin .num {
-  background-color: #3c30e7;
+  background-color: #3834b4 ;
 }
 .zasta-coin .num img {
   width: 35px;
@@ -1205,7 +1205,7 @@ video::-webkit-media-controls-start-playback-button {
   width: 227px;
   font-size: 14px;
   letter-spacing: 0.7px;
-  color: #3c30e7;
+  color: #3834b4 ;
   display: block;
 }
 .dashboard-features .icon {
@@ -1281,7 +1281,7 @@ video::-webkit-media-controls-start-playback-button {
   bottom: -139px;
   font-size: 18px;
   letter-spacing: 0.8px;
-  color: #3c30e7;
+  color: #3834b4 ;
   height: 140px;
 }
 .dashboard-features .carousel-caption .icon {
@@ -1316,7 +1316,7 @@ video::-webkit-media-controls-start-playback-button {
 
 .mehr-erfahren h2 {
   font-weight: 900;
-  color: #3c30e7;
+  color: #3834b4 ;
   margin-top: 30px;
   padding-bottom: 38px;
 }
@@ -1330,7 +1330,7 @@ video::-webkit-media-controls-start-playback-button {
 }
 .mehr-erfahren hr {
   width: 155.3px;
-  border: solid 1px #3c30e7;
+  border: solid 1px #3834b4 ;
 }
 .mehr-erfahren a {
   width: 311px;
@@ -1460,7 +1460,7 @@ video::-webkit-media-controls-start-playback-button {
 .oft h2 {
   font-size: 24px;
   font-weight: 900;
-  color: #3c30e7;
+  color: #3834b4 ;
   padding-bottom: 38px;
 }
 .oft h3 {
@@ -1476,7 +1476,7 @@ video::-webkit-media-controls-start-playback-button {
 }
 .oft hr {
   width: 155.3px;
-  border: solid 1px #3c30e7;
+  border: solid 1px #3834b4 ;
   margin-top: 57px;
 }
 .oft .oft-title {
@@ -1496,7 +1496,7 @@ video::-webkit-media-controls-start-playback-button {
 .contact h2 {
   font-size: 20px;
   font-weight: 900;
-  color: #3c30e7;
+  color: #3834b4 ;
   padding-bottom: 38px;
   margin-bottom: 0;
   margin-top: 63px;
@@ -1512,7 +1512,7 @@ video::-webkit-media-controls-start-playback-button {
 }
 .contact hr {
   width: 155.3px;
-  border: solid 1px #3c30e7;
+  border: solid 1px #3834b4 ;
   margin-top: 12px;
 }
 .contact sup {
@@ -1580,7 +1580,7 @@ p.job {
   margin-bottom: 12px;
 }
 .cart:hover {
-  background-color: #e7ca15;
+  background-color: #E7ca15;
   text-decoration: none;
 }
 .job h2 {
@@ -1783,20 +1783,20 @@ footer hr {
 }
 .textpage .navbar {
   height: 124px;
-  border-bottom: solid 1px #3c30e7;
+  border-bottom: solid 1px #3834b4 ;
   border-radius: 0;
   padding: 38px 0px;
-  color: #3c30e7;
+  color: #3834b4 ;
 }
 .textpage .top-links-left > a,
 .textpage .top-links-left > span,
 .textpage .navbar .telephone a {
-  color: #3c30e7;
+  color: #3834b4 ;
 }
 .textpage .btn-default {
   background: initial;
-  color: #3c30e7;
-  border-color: #3c30e7;
+  color: #3834b4 ;
+  border-color: #3834b4 ;
 }
 .textpage .btn-default.active.focus,
 .textpage .btn-default.active:focus,
@@ -1809,9 +1809,9 @@ footer hr {
 .textpage .open > .dropdown-toggle.btn-default:hover,
 .textpage .btn-default:focus,
 .textpage .btn-default:hover {
-  background: #3c30e7;
+  background: #3834b4 ;
   color: #f4f4f4;
-  border-color: #3c30e7;
+  border-color: #3834b4 ;
 }
 .without-svg-fix {
   padding-top: 22px;
@@ -1830,7 +1830,7 @@ footer hr {
   line-height: 2.33;
   letter-spacing: 0.9px;
   text-align: center;
-  color: #3c30e7;
+  color: #3834b4 ;
   margin: 0;
   margin-top: 51px;
   padding: 0;
@@ -1876,7 +1876,7 @@ footer hr {
   text-transform: none;
   text-align: center;
   margin-top: 0px;
-  color: #3c30e7;
+  color: #3834b4 ;
 }
 .textpage.jobpage h3 {
   font-size: 18px;
@@ -1907,7 +1907,7 @@ footer hr {
   font-size: 16px;
   line-height: 2.13;
   letter-spacing: 0.6px;
-  color: #3c30e7;
+  color: #3834b4 ;
   display: block;
   margin-top: 5px;
 }
@@ -1916,7 +1916,7 @@ footer hr {
   font-weight: 300;
   line-height: 2.13;
   letter-spacing: 0.6px;
-  color: #3c30e7;
+  color: #3834b4 ;
   margin-top: 64px;
   display: block;
 }
@@ -2007,7 +2007,7 @@ div.faq {
   text-decoration: none;
 }
 .faq-title h3 {
-  color: #3c30e7;
+  color: #3834b4 ;
   font-size: 22px;
   line-height: 27px;
   margin: 0;

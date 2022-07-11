@@ -18,7 +18,7 @@ const style = {
     flexDirection: 'column',
     alignItems: 'center',
     p: 4,
-  };
+};
 
 export default function Pricing() {
     const [open, setOpen] = React.useState(false);
@@ -29,7 +29,7 @@ export default function Pricing() {
     const handleOpen2 = () => setOpen2(true);
     const handleClose2 = () => setOpen2(false);
 
-    return <div>
+    return <div className='mt-50-all'>
         <div className="simple-pricing position-relative section-block d-flex align-items-center justify-content-center" id="pricing">
             {/* <img src="../../../assets/image/triangle-shape.png" className="d-none d-md-block triangle-shape" /> */}
             <div className="container">
@@ -46,7 +46,7 @@ export default function Pricing() {
                             <h2>Free forever</h2>
                             <img src="./img/zero.png" className="d-block mx-auto rupee-img" id="zero-img" />
                             <p className="rupee-title text-blue">Rupee</p>
-                            <p>
+                            <p style={{ fontFamily: 'Nunito' }}>
                                 Free forever, booking if you choose only Email based OTP verification of your customers <a className="m-detail" onClick={handleOpen}>More details</a>
                             </p>
                             <Modal
@@ -54,25 +54,22 @@ export default function Pricing() {
                                 onClose={handleClose}
                                 aria-labelledby="modal-modal-title"
                                 aria-describedby="modal-modal-description"
-                                >
+                            >
                                 <Box sx={style}>
-                                <Typography  id="modal-modal-title" variant="h4" component="h2" className='ffp'>
-                                    Free-Forever Plan
-                                </Typography>
-                                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                                   
-                                   <ul className='list-price'>
-                                       <li>Authenticate your customers by their email-id’s.</li>
-                                       <li>Customers get the OTP’s emails and not as SMS.</li>
-                                       <li>No payments required on this plan.</li>
-                                       <li>Continue on this plan as much as you like .</li>
-                                       <li>More questions, or a feedback, please mail <a href='mailto:support@bookbyqr.com'>support@bookbyqr.com</a></li>
-                                   </ul>
-                                    
-                                </Typography>
-                                <Button className='wd-50' onClick={handleClose} variant="contained">Close</Button>
-
-                            </Box>
+                                    <Typography id="modal-modal-title" variant="h4" component="h2" className='ffp'>
+                                        Free-Forever Plan
+                                    </Typography>
+                                    <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                                        <ul className='list-price'>
+                                            <li>Authenticate your customers by their email-id’s.</li>
+                                            <li>Customers get the OTP’s emails and not as SMS.</li>
+                                            <li>No payments required on this plan.</li>
+                                            <li>Continue on this plan as much as you like .</li>
+                                            <li>More questions, or a feedback, please mail <a href='mailto:support@bookbyqr.com'>support@bookbyqr.com</a></li>
+                                        </ul>
+                                    </Typography>
+                                    <Button className='wd-50' onClick={handleClose} variant="contained">Close</Button>
+                                </Box>
                             </Modal>
                         </div>
                     </div>
@@ -81,38 +78,38 @@ export default function Pricing() {
                             <h2>Pay as you go</h2>
                             <img src="./img/one.png" className="d-block mx-auto rupee-img" id="one-img" />
                             <p className="rupee-title text-blue">Rupee</p>
-                            <p>
+                            <p style={{ fontFamily: 'Nunito' }}>
                                 <b className="text-blue">1 rupee</b>, flat, inclusive all taxes, per booking if you choose phone
-                                based OTP verification of your customers <a className="ml-1" onClick={handleOpen2}>More details</a>
+                                based OTP verification of your customers <a className="m-detail" onClick={handleOpen2}>More details</a>
                             </p>
                             <Modal
                                 open={open2}
                                 onClose={handleClose2}
                                 aria-labelledby="modal-modal-title"
                                 aria-describedby="modal-modal-description"
-                                >
+                            >
                                 <Box sx={style}>
-                                <Typography  id="modal-modal-title" variant="h4" component="h2" className='ffp'>
-                                    Pay-as-you-go Plan
-                                </Typography>
-                                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                                   
-                                   <ul className='list-price'>
-                                       <li>Better authenticate your Customers.</li>
-                                       <li>Customer get the OTP's on Phone numbers and not emails.</li>
-                                       <li>Rs 100 of recharge gets you 100 Credits.</li>
-                                       <li>Zero Credit used for Cancellations.</li>
-                                       <li>Zero Credits used for bookings done by Providers.</li>
-                                       <li>Automatic fallback Free-Forever plan when credits are exhaused.</li>
-                                       <li>Recharge again to load up the credits.</li>
-                                       <li>Easy Refund Policy</li>
-                                       <li>More questions, please mail <a href='mailto:support@bookbyqr.com'>support@bookbyqr.com</a></li>
-                                   </ul>
-                                    
-                                </Typography>
-                                <Button className='wd-50' onClick={handleClose2} variant="contained">Close</Button>
+                                    <Typography id="modal-modal-title" variant="h4" component="h2" className='ffp'>
+                                        Pay-as-you-go Plan
+                                    </Typography>
+                                    <Typography id="modal-modal-description" sx={{ mt: 2 }}>
 
-                            </Box>
+                                        <ul className='list-price'>
+                                            <li>Better authenticate your Customers.</li>
+                                            <li>Customer get the OTP's on Phone numbers and not emails.</li>
+                                            <li>Rs 100 of recharge gets you 100 Credits.</li>
+                                            <li>Zero Credit used for Cancellations.</li>
+                                            <li>Zero Credits used for bookings done by Providers.</li>
+                                            <li>Automatic fallback Free-Forever plan when credits are exhaused.</li>
+                                            <li>Recharge again to load up the credits.</li>
+                                            <li>Easy Refund Policy</li>
+                                            <li>More questions, please mail <a href='mailto:support@bookbyqr.com'>support@bookbyqr.com</a></li>
+                                        </ul>
+
+                                    </Typography>
+                                    <Button className='wd-50' onClick={handleClose2} variant="contained">Close</Button>
+
+                                </Box>
                             </Modal>
                         </div>
                     </div>
@@ -123,11 +120,11 @@ export default function Pricing() {
                         which offer much more
                         customisation. For support feedback and enquiries about the plans
                         please contact us at <a href="mailto:support@bookbyqr.com" className='ml-cl'>support@bookbyqr.com</a></p>
-                    <p className='price-end-desc' style={{color:'grey'}}>Give your clients the power to book appointments<br/>
+                    <p className='price-end-desc'>Give your clients the power to book appointments<br />
                         with online scheduling</p>
 
                     <div className="search-wrapper cf">
-                        <input type="text" placeholder="Enter your email" required  />
+                        <input type="text" placeholder="Enter your email" required />
                         <button type="submit">Get Started</button>
                     </div>
                 </div>

@@ -17,7 +17,7 @@ const Header = () => {
                         <button
                             style={{
                                 padding: '10px', width: '150%', fontSize: '20px',
-                                backgroundColor: '#e7ca15', color: '#3b5998', fontWeight: '900'
+                                backgroundColor: '#E7ca15', color: '#3b5998', fontWeight: '900'
                             }}>
                             Login
                         </button>

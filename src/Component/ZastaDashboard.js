@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const ZastaDashboard = () => {
     return (
-        <div>
+        <div className='mt-100-all'>
             <div className="container dashboard text-center">
                 <div className="row">
                     <img src="img/svg/Zasta_Icons_Dashboard.svg" className="Group-4" alt="Dashboard" loading="lazy" />
@@ -14,8 +14,8 @@ const ZastaDashboard = () => {
                         phone dial <br/> history.
                     </p>
                 </div>
-                <div className="row Path-51" />
-                <div className="row dashboard-features hidden-xs dashboard-features-items">
+                <div className="row Path-51 " />
+                <div className="row dashboard-features hidden-xs dashboard-features-items mt-100-all">
                     <img src="img/group-34.png"  className="Group-34" alt="Status" />
                     <span className="feature feature-1">
                         <img src="img/svg/Zasta_Icons_Clock.svg" className="Group-14 icon" alt="Uhr" />

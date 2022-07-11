@@ -42,7 +42,7 @@ export default function Contact() {
   }
 
 
-  return <div id='contactus'>
+  return <div id='contactus' className='mt-50-all'>
     <div className=" container contact-form">
       <div className="row">
         {/* <div className="col-md-6">
@@ -55,7 +55,7 @@ export default function Contact() {
                 <Typography gutterBottom variant="h3">
                   Send us a message
                 </Typography>
-                <Typography variant="body2" color="textSecondary" variant="p" gutterBottom>
+                <Typography variant="body2" color="textSecondary" gutterBottom>
                   Fill up the form and our team will get back to you within 24 hours.
                 </Typography>
                 <form onSubmit={Registration}>

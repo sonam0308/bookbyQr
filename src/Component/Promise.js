@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Promise() {
     return <div>
 
-        <div className="container">
+        <div className="container mt-50-all">
             <div className="row promise-align">
                 <img src="img/svg/Zasta_Icons_Zasta_Seal.svg" className="Group-7" alt="badge" />
                 {/* <span className="sub-title"><font style={{verticalAlign: 'inherit'}}><font style={{verticalAlign: 'inherit'}}>Our BookByQr promise</font></font></span> */}
