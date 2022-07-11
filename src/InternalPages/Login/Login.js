@@ -23,11 +23,8 @@ const Login = () => {
       <div className="box-form">
         <div className="left hidden-xs">
           <div className="overlay-left">
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Curabitur et est sed felis aliquet sollicitudin</p>
             <span>
-              <img src="https://app.zasta.de/5570835351ccbed5a1f517f68e7ca081.png" />
+              <img src="./img/img3.jpg" style={{width: '120%'}}/>
             </span>
           </div>
         </div>
