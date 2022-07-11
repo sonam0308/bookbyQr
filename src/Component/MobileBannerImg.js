@@ -14,7 +14,7 @@ const MobileBannerImg = () => {
                             <span className="num">1</span>
                             <span className="img"><img src="https://bookbyqr.com/assets/image/card1%20illustration.png" alt="PIN Code" loading="lazy" style={{width: '100%', height: '150px'}}/></span>
                             <span className="title">SHARE</span>
-                            <div> Use BookByQR to share your availability with a few or thousands of people. </div>
+                            <p className='font-styling-20'> Use BookByQR to share your availability with a few or thousands of people. </p>
                         </div>
                     </div>
                     <div className="col-sm-4">
@@ -22,7 +22,7 @@ const MobileBannerImg = () => {
                             <span className="num">2</span>
                             <span className="img"><img src="https://bookbyqr.com/assets/image/card2%20illustration.png" alt="Persönliche Angaben" loading="lazy" style={{width: '100%', height: '150px'}}/></span>
                             <span className="title">Organise</span>
-                            <div> Organise vaccination schedules for society. Let walkin customers schedule themselves to address social distancing. </div>
+                            <p className='font-styling-20'> Organise vaccination schedules for society. Let walkin customers schedule themselves to address social distancing. </p>
                         </div>
                     </div>
                     <div className="col-sm-4">
@@ -30,7 +30,7 @@ const MobileBannerImg = () => {
                             <span className="num">3</span>
                             <span className="img"><img src="https://bookbyqr.com/assets/image/card3%20illustration.png" alt="Unterschrift" loading="lazy" style={{width: '60%', height: '150px'}}/></span>
                             <span className="title">RESERVE</span>
-                            <div> Reserve tables for your diners Manage your shows or concerts. Create appointments for your patients. </div>
+                            <p className='font-styling-20'> Reserve tables for your diners Manage your shows or concerts. Create appointments for your patients. </p>
                         </div>
                     </div>
                 </div>

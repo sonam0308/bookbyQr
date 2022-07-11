@@ -46,7 +46,7 @@ export default function Pricing() {
                             <h2>Free forever</h2>
                             <img src="./img/zero.png" className="d-block mx-auto rupee-img" id="zero-img" />
                             <p className="rupee-title text-blue">Rupee</p>
-                            <p style={{ fontFamily: 'Nunito' }}>
+                            <p className='font-styling-20'>
                                 Free forever, booking if you choose only Email based OTP verification of your customers <a className="m-detail" onClick={handleOpen}>More details</a>
                             </p>
                             <Modal
@@ -78,7 +78,7 @@ export default function Pricing() {
                             <h2>Pay as you go</h2>
                             <img src="./img/one.png" className="d-block mx-auto rupee-img" id="one-img" />
                             <p className="rupee-title text-blue">Rupee</p>
-                            <p style={{ fontFamily: 'Nunito' }}>
+                            <p className='font-styling-20'>
                                 <b className="text-blue">1 rupee</b>, flat, inclusive all taxes, per booking if you choose phone
                                 based OTP verification of your customers <a className="m-detail" onClick={handleOpen2}>More details</a>
                             </p>

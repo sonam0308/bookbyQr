@@ -8,17 +8,17 @@ const ZastaAdvantage = () => {
                     <div className="row header">
                         <img src="img/svg/Zasta_Icons_Star.svg" className="Fill-1543" alt="Rakete" loading="lazy" />
                     </div>
-                        <h2 className='how-title'>How is it possible.</h2>
+                    <h2 className='how-title'>How is it possible.</h2>
                     <div className="row carousel slide container carousel-container" id='feature-slider'>
                         <div className="col-sm-4">
                             <div className="box">
                                 <div className="benefit benefit-1">
-                                    <img src="img/svg/Zasta_Icons_teaser_1.svg"  alt="Uhr" loading="lazy" />
+                                    <img src="img/svg/Zasta_Icons_teaser_1.svg" alt="Uhr" loading="lazy" />
                                 </div>
                                 <span className="title">Ready In a Minute</span>
-                                With a simple registration and a quick schedule
-                                creation, you can share your availability to your 
-                                clients in just under a minute.
+                                <p className='font-styling'>With a simple registration and a quick schedule
+                                    creation, you can share your availability to your
+                                    clients in just under a minute.</p>
                             </div>
                         </div>
                         <div className="col-sm-4">
@@ -27,8 +27,8 @@ const ZastaAdvantage = () => {
                                     <img src="img/svg/Zasta_Icons_teaser_2.svg" alt="Finanzamt" loading="lazy" />
                                 </div>
                                 <span className="title">Start with Zero Payments</span>
-                                Choose a free plan that provides for unlimited 
-                                bookings, at zero payments.
+                                <p className='font-styling'>Choose a free plan that provides for unlimited
+                                    bookings, at zero payments.</p>
                             </div>
                         </div>
                         <div className="col-sm-4">
@@ -37,8 +37,8 @@ const ZastaAdvantage = () => {
                                     <img src="img/svg/Zasta_Icons_teaser_3.svg" alt="Steuerberater" loading="lazy" />
                                 </div>
                                 <span className="title">Cancel Anytime</span>
-                                Cancel your services with us anytime and
-                                take back all unspent credits.
+                                <p className='font-styling'>Cancel your services with us anytime and
+                                    take back all unspent credits.</p>
                             </div>
                         </div>
                     </div>

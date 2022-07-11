@@ -136,15 +136,15 @@ export default function Contact() {
                         disabled color="primary" 
                         size='large'
                         fullWidth
-                        className="submit-button"
+                        style={{ fontWeight: '800', fontSize: '15px'}}
                         >Submit</Button>
                       </Grid>
                         :
                         <Grid item xs={12}>
                           <Button type="submit" variant="contained" size='large' fullWidth
                           style={{color: '#3834b4',
-                           backgroundColor: '#E7ca15', fontWeight: '800'
-                           }}>Submit</Button>
+                           backgroundColor: '#E7ca15', fontWeight: '800', fontSize: '15px'}}>
+                            Submit</Button>
                         </Grid>
                     }
                   </Grid>
