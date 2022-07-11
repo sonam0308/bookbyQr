@@ -102,13 +102,13 @@ const Signup = () => {
             </div>
             <br />
             <div className="remember-me--forget-password">
-              <label>
+              {/* <label>
                 <input type="checkbox" className='check'
                   checked={freePlan}
                   onChange={(e) => { setFreePlan(e.target.checked) }}
                 />
                 <span className="text-checkbox">Free Plan</span>
-              </label>
+              </label> */}
               <label>
                 <input type="checkbox" className='check'
                   checked={termsOfService}
@@ -119,9 +119,6 @@ const Signup = () => {
             </div>
           
           <br />
-          {
-            console.log(freePlan, termsOfService)
-          }
           {
             freePlan === true && termsOfService === true ? (
               <>
