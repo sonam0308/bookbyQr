@@ -74,28 +74,6 @@ const ConditionalHeader = () => {
                         <Link className="navbar-brand" to="/">
                             <img src="img/svg/logo.svg" className="logo" alt="ZASTA" />
                         </Link>
-                        {/* <ul className='header-list'>
-                            <li>
-                                <Link className='header-links' to="/pricing">
-                                    Pricing
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className='header-links' to="/">
-                                    Features
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className='header-links' to="/">
-                                    About Us
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className='header-links' to="/">
-                                    Contact Us
-                                </Link>
-                            </li>
-                        </ul> */}
                     </div>
                     <div className='button-header-wrap'>
                         <div class="dropdown">
@@ -107,6 +85,7 @@ const ConditionalHeader = () => {
                                 variant="contained"
                                 disableElevation
                                 onClick={handleClick}
+                                size="small"
                                 endIcon={<KeyboardArrowDownIcon />
                                 }
                             >
@@ -121,36 +100,36 @@ const ConditionalHeader = () => {
                                 open={open}
                                 onClose={handleClose}
                             >
-                                <MenuItem onClick={handleClose} disableRipple>
-                                    <Link className='dropdown-header-list' to="/allappointment">
+                                <Link className='dropdown-header-list' to="/allappointment">
+                                    <MenuItem onClick={handleClose} disableRipple className='menu-font'>
                                         View all Appointments
-                                    </Link>
-                                </MenuItem>
-                                <MenuItem onClick={handleClose} disableRipple>
-                                    <Link className='dropdown-header-list' to="/schedules">
+                                    </MenuItem>
+                                </Link>
+                                <Link className='dropdown-header-list' to="/schedules">
+                                    <MenuItem onClick={handleClose} disableRipple className='menu-font'>
                                         My Schedules
-                                    </Link>
-                                </MenuItem>
-                                <MenuItem onClick={handleClose} disableRipple>
-                                    <Link className='dropdown-header-list' to="/profile">
+                                    </MenuItem>
+                                </Link>
+                                <Link className='dropdown-header-list' to="/profile">
+                                    <MenuItem onClick={handleClose} disableRipple className='menu-font'>
                                         Account Info
-                                    </Link>
-                                </MenuItem>
-                                <MenuItem onClick={handleClose} disableRipple>
-                                    <Link className='dropdown-header-list' to="/billing">
+                                    </MenuItem>
+                                </Link>
+                                <Link className='dropdown-header-list' to="/billing">
+                                    <MenuItem onClick={handleClose} disableRipple className='menu-font'>
                                         Billing Info
-                                    </Link>
-                                </MenuItem>
-                                <MenuItem onClick={handleClose} disableRipple>
-                                    <Link className='dropdown-header-list' to="/qrcode">
+                                    </MenuItem>
+                                </Link>
+                                <Link className='dropdown-header-list' to="/qrcode">
+                                    <MenuItem onClick={handleClose} disableRipple className='menu-font'>
                                         QR Code
-                                    </Link>
-                                </MenuItem>
-                                <MenuItem onClick={handleClose} disableRipple>
-                                    <Link className='dropdown-header-list' to="/reports">
+                                    </MenuItem>
+                                </Link>
+                                <Link className='dropdown-header-list' to="/reports">
+                                    <MenuItem onClick={handleClose} disableRipple className='menu-font'>
                                         Reports
-                                    </Link>
-                                </MenuItem>
+                                    </MenuItem>
+                                </Link>
 
                             </StyledMenu>
                         </div>
