@@ -947,10 +947,28 @@ svg.clip-svg {
 .container.main-content p {
   font-size: 18px;
   font-weight: 500;
+  color: #36325d;
   line-height: 1.56;
   letter-spacing: 0.8px;
   text-align: left;
+  font-family: 'Nunito', sans-serif;
+}
+
+.font-styling{
+  font-size: 15px;
+  font-weight: 500;
   color: #36325d;
+  line-height: 1.56;
+  letter-spacing: 0.8px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.font-styling-20{
+  font-size: 18px;
+  font-weight: 500;
+  color: #36325d;
+  line-height: 1.56;
+  letter-spacing: 0.8px;
   font-family: 'Nunito', sans-serif;
 }
 
@@ -1011,8 +1029,9 @@ svg.clip-svg {
 }
 
 .testimonial .head-detail {
-  color: black;
-  font-weight: 500;
+  color: #36325d;
+  font-weight: 600;
+  font-size: 16px;
   max-width: 400px;
   margin-bottom: 30px;
   font-family: 'Nunito', sans-serif;
@@ -1042,13 +1061,13 @@ svg.clip-svg {
 
 .mit-zasta .title {
   display: block;
-  font-size: 18px;
   line-height: 1.44;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.8px;
   margin-top: 21px;
   margin-bottom: 11px;
-  color: #3834b4 ;
-  font-weight: normal;
+  font-size: 20px;
+  font-weight: 600;
+  color: #36325d;
 }
 
 .card-title {
@@ -1203,6 +1222,7 @@ svg.clip-svg {
   display: block;
   margin-bottom: 25px;
   min-height: 50px;
+  font-size: 18px;
 }
 
 .contact-form {

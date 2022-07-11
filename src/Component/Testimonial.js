@@ -41,7 +41,7 @@ export default function Testimonial() {
                                                 <img src={data.image} alt="Uhr" loading="lazy" />
                                             </div>
                                             <span className="title card-title">{data.name}</span>
-                                            {data.description}
+                                            <p className='font-styling'>{data.description}</p>
                                         </div>
                                     </div>
                                 ))
