@@ -83,6 +83,8 @@
 }
 .sch-select {
   margin-top: 24px;
+  font-size: 15px;
+
 }
 
 .MuiInputLabel-root {
@@ -101,7 +103,7 @@ input:focus::-webkit-datetime-edit {
 .center-head {
   font-size: 24px !important;
   text-align: center;
-  color: blue;
+  color: #3834b4;
 }
 
 .schedule-box {
@@ -119,7 +121,17 @@ input:focus::-webkit-datetime-edit {
   .schedule-box .MuiDialog-paperFullWidth {
     max-width: none;
     width: 100%;
-    height: 100%;
-    max-width: 1100px;
+    /* height: 100%; */
+    max-width: 500px;
   }
+}
+
+.form__name {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-weight: 900;
+  background-color: #3834b4;
+  padding: 20px;
+  color: #fff;
+  font-size: 15px;
 }
