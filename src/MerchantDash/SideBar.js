@@ -1,13 +1,14 @@
 import { AppBar, Button, ClickAwayListener, CssBaseline, Drawer, Grow, Hidden, IconButton, List, ListItem, ListItemIcon, ListItemText, makeStyles, MenuItem, MenuList, Paper, Popper, Toolbar, Typography, useTheme } from '@material-ui/core'
-import { EuroSymbolOutlined} from '@mui/icons-material'
+import { AccountCircleOutlined, EuroSymbolOutlined } from '@mui/icons-material'
 import ScheduleOutlinedIcon from '@mui/icons-material/ScheduleOutlined';
 import BookOnlineOutlinedIcon from '@mui/icons-material/BookOnlineOutlined';
 import QrCode2OutlinedIcon from '@mui/icons-material/QrCode2Outlined';
 import ReportOutlinedIcon from '@mui/icons-material/ReportOutlined';
 import React from 'react'
-import { useHistory, useLocation } from 'react-router-dom'
+import { Link, useHistory, useLocation } from 'react-router-dom'
 import MenuIcon from '@material-ui/icons/Menu';
 import Header from '../Component/Header';
+import logo from '../logo.svg'
 
 const drawerWidth = 240
 
@@ -66,9 +67,19 @@ const useStyles = makeStyles((theme) => {
             },
             color: 'white'
         },
-
+        navbarHeaderNav: {
+            padding: '10px',
+            backgroundColor: '#3834b4',
+            margin: '0px 0 50px',
+            height: '65px'
+        },
+        navbarBrand: {
+            height: '45px',
+        },
+        logo: {
+            marginTop: '-20px'
+        }
     }
-
 })
 
 const SideBar = (props) => {
@@ -121,7 +132,7 @@ const SideBar = (props) => {
         {
             text: 'All Appointments',
             icon: <BookOnlineOutlinedIcon />,
-            path: '/allappointment'
+            path: '/merchant/appointments'
         },
         {
             text: 'QR Code',
@@ -131,22 +142,28 @@ const SideBar = (props) => {
         {
             text: 'Reports',
             icon: <ReportOutlinedIcon />,
-            path: '/reports'
+            path: '/merchant/reports'
         },
         {
             text: 'Billing Info',
             icon: <EuroSymbolOutlined />,
             path: '/merchant/billing'
         },
+        {
+            text: 'Account Info',
+            icon: <AccountCircleOutlined />,
+            path: '/merchant/accounts'
+        },
     ]
 
     const drawer = (
         <div>
-            <div>
-                <Header/>
-                {/* <Typography variant="h6" className={classes.title}>
-                    BookByQR
-                </Typography> */}
+            <div className={classes.navbarHeaderNav}>
+                {/* <div className={classes.header}> */}
+                <Link className={classes.navbarBrand} to="/">
+                    <img src={logo} className={classes.logo} alt="BookByQR" />
+                </Link>
+                {/* </div> */}
             </div>
             <List>
                 {menuItems.map(item => (
