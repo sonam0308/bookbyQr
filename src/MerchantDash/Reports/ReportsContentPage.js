@@ -1,10 +1,59 @@
-import { Button, Grid, TextField } from '@material-ui/core'
+import { Button, Grid, TextField,  Paper, AppBar, Toolbar, Typography, makeStyles } from '@material-ui/core'
 import React from 'react'
 
+const useStyles = makeStyles((theme) => {
+    return {
+        root: {
+            width: '100%',
+        },
+        static: {
+            flexGrow: '1',
+            backgroundColor: 'white',
+            border: '2px solid #3834b4',
+            fontFamily: "'Nunito', sans-serif"
+        },
+        buttonStyle: {
+            backgroundColor: '#E7ca15',
+            color: '#3834b4',
+            fontFamily: "'Nunito', sans-serif",
+            fontWeight: '800',
+            margin: '20px'
+        },
+        title: {
+            flexGrow: 1,
+            display: 'none',
+            [theme.breakpoints.up('sm')]: {
+                display: 'block',
+            },
+            color: 'black',
+            fontFamily: "'Nunito', sans-serif"
+        },
+    }
+})
+
 const ReportsContentPage = () => {
+    const classes = useStyles()
     return (
         <div>
-            <div className='box-wrap'>
+            <Paper className={classes.root}>
+                <AppBar position="static" className={classes.static}>
+                    <Toolbar>
+                        {/* <IconButton
+                            edge="start"
+                            className={classes.menuButton}
+                            color="inherit"
+                            aria-label="open drawer"
+                            onClick={() => getWorkerList("ALL")}
+                        >
+                            <AttachMoneySharp />
+                        </IconButton> */}
+                        <Typography className={classes.title} variant="h6" noWrap>
+                            Reports
+                        </Typography>
+                    </Toolbar>
+                </AppBar>
+            </Paper>
+            <div className='box-wrap' style={{marginTop: '20px'}}>
                 <div class="head-wrap">
                     <h2 class="center-txt-reports">Reports</h2>
                 </div>
@@ -33,7 +82,7 @@ const ReportsContentPage = () => {
                                 }}
                             />
                             <Grid container justify='center'>
-                            <Button className="mail-button" variant='contained' style={{backgroundColor: '#E7ca15',color: '#3834b4', margin: '20px'}}>Mail</Button>
+                            <Button className={classes.buttonStyle} variant='contained' >Mail</Button>
                             </Grid>
                         </div>
                         <div className="col-sm-6 col-xs-12 col-md-6 col-lg-6 ">
@@ -59,7 +108,7 @@ const ReportsContentPage = () => {
                                 }}
                             />
                             <Grid container justify='center'>
-                            <Button className="mail-button" variant='contained' style={{backgroundColor: '#E7ca15',color: '#3834b4', margin: '20px'}}>Mail</Button>
+                            <Button className={classes.buttonStyle} variant='contained' >Mail</Button>
                             </Grid>
                         </div>
                     </div>

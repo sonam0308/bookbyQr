@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import ConditionalHeader from '../../Component/conditional-header/ConditionalHeader';
 import Footer from '../../Component/Footer';
 import Header from '../../Component/Header';
-import './Profile.css'
 
 const Profile = () => {
     const [isEdit, setIsEdit] = useState(false)
@@ -37,7 +36,7 @@ const Profile = () => {
                             <h5>Basic Details:</h5>
                             <div className="profile-border">
                                 <div style={{ display: 'flex' }}>
-                                    <h5>Name:</h5>
+                                <label>Name:</label>
                                     {
                                         isEdit ?
                                             (
@@ -57,7 +56,7 @@ const Profile = () => {
                                     }
                                 </div>
                                 <div style={{ display: 'flex' }}>
-                                    <h5>Email:</h5>
+                                <label>Email:</label>
                                     {
                                         isEdit ?
                                             (
@@ -77,7 +76,7 @@ const Profile = () => {
                                     }
                                 </div>
                                 <div style={{ display: 'flex' }}>
-                                    <h5>Phone:</h5>
+                                <label>Phone:</label>
                                     {
                                         isEdit ?
                                             (
@@ -104,7 +103,7 @@ const Profile = () => {
                             <h5>Business Details:</h5>
                             <div className="profile-border">
                                 <div style={{ display: 'flex' }}>
-                                    <h5>Business Name:</h5>
+                                    <label>Business Name:</label>
                                     {
                                         isEdit ?
                                             (
@@ -124,7 +123,7 @@ const Profile = () => {
                                     }
                                 </div>
                                 <div style={{ display: 'flex' }}>
-                                    <h5>Website:</h5>
+                                    <label>Website:</label>
                                     {
                                         isEdit ?
                                             (
@@ -144,7 +143,7 @@ const Profile = () => {
                                     }
                                 </div>
                                 <div style={{ display: 'flex' }}>
-                                    <h5>Address:</h5>
+                                    <label>Address:</label>
                                     {
                                         isEdit ?
                                             (

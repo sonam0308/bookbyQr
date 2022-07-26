@@ -1,5 +1,6 @@
 import { Grid, makeStyles, useTheme } from '@material-ui/core'
 import React from 'react'
+import Footer from '../../Component/Footer'
 import SideBar from '../SideBar'
 import AllAppointmentsPage from './AllAppointmentsPage'
 
@@ -15,9 +16,8 @@ const useStyles = makeStyles((theme) => {
             justifyContent: 'center',
             alignItems: 'center'
         },
-        toolbar: theme.mixins.toolbar,
+        toolbar: theme.mixins.toolbar
     }
-
 })
 const Appointments = () => {
     const classes = useStyles()
@@ -35,6 +35,7 @@ const Appointments = () => {
                     </div>
                 </Grid>
             </div>
+
         </>
     )
 }

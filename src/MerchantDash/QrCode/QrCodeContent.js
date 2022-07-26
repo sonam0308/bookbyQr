@@ -1,10 +1,55 @@
-import { Grid } from '@material-ui/core'
+import { Grid, Paper, AppBar, Toolbar, Typography, makeStyles } from '@material-ui/core'
 import React from 'react'
 import "./qrcode.css"
 
+const useStyles = makeStyles((theme) => {
+    return {
+        root: {
+            width: '100%',
+        },
+        static: {
+            flexGrow: '1',
+            backgroundColor: 'white',
+            border: '2px solid #3834b4'
+        },
+        buttonStyle: {
+            backgroundColor: '#E7ca15',
+            color: '#3834b4'
+        },
+        title: {
+            flexGrow: 1,
+            display: 'none',
+            [theme.breakpoints.up('sm')]: {
+                display: 'block',
+            },
+            color: 'black',
+            fontFamily: "'Nunito', sans-serif"
+        },
+    }
+})
+
 const QrCodeContent = () => {
+    const classes = useStyles()
     return (
         <div>
+            <Paper className={classes.root}>
+                <AppBar position="static" className={classes.static}>
+                    <Toolbar>
+                        {/* <IconButton
+                            edge="start"
+                            className={classes.menuButton}
+                            color="inherit"
+                            aria-label="open drawer"
+                            onClick={() => getWorkerList("ALL")}
+                        >
+                            <AttachMoneySharp />
+                        </IconButton> */}
+                        <Typography className={classes.title} variant="h6" noWrap>
+                            QR Code
+                        </Typography>
+                    </Toolbar>
+                </AppBar>
+            </Paper>
             <div className='container heading'>
                 <h2>Your shareable QR Code</h2>
                 <hr className='hr' />

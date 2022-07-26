@@ -1,14 +1,15 @@
 import { AppBar, Button, Grid, IconButton, makeStyles, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Toolbar, Typography } from '@material-ui/core'
 import React from 'react'
 import { useHistory } from 'react-router-dom';
-
+import EditRoundedIcon from '@material-ui/icons/EditRounded';
+import DeleteForeverRoundedIcon from '@mui/icons-material/DeleteForeverRounded';
 const useStyles = makeStyles((theme) => {
     return {
         root: {
             width: '100%',
         },
         container: {
-
+            fontFamily: "'Nunito', sans-serif",
             maxHeight: 450,
         },
         title: {
@@ -17,15 +18,12 @@ const useStyles = makeStyles((theme) => {
             [theme.breakpoints.up('sm')]: {
                 display: 'block',
             },
-            color: 'black'
+            color: 'black',
+            fontFamily: "'Nunito', sans-serif"
         },
         search: {
             position: 'relative',
             borderRadius: '20px',
-            // backgroundColor: alpha(theme.palette.common.white, 0.15),
-            // '&:hover': {
-            //   backgroundColor: alpha(theme.palette.common.white, 0.25),
-            // },
             marginLeft: 0,
             width: '100%',
             [theme.breakpoints.up('sm')]: {
@@ -46,6 +44,7 @@ const useStyles = makeStyles((theme) => {
         },
         inputRoot: {
             color: 'inherit',
+            fontFamily: "'Nunito', sans-serif"
         },
         inputInput: {
             padding: theme.spacing(1, 1, 1, 0),
@@ -59,28 +58,42 @@ const useStyles = makeStyles((theme) => {
                     width: '20ch',
                 },
             },
-            color: 'black'
+            color: 'black',
+            fontFamily: "'Nunito', sans-serif"
         },
         static: {
             flexGrow: '1',
             backgroundColor: 'white',
-            border: '2px solid #3834b4'
+            border: '2px solid #3834b4',
+            fontFamily: "'Nunito', sans-serif"
         },
         menuButton: {
             marginRight: theme.spacing(2),
-            color: '#3834b4'
+            color: '#3834b4',
+            fontFamily: "'Nunito', sans-serif"
         },
         table: {
             width: '100%',
             display: 'block',
-            overflowX: 'auto'
+            overflowX: 'auto',
+            fontFamily: "'Nunito', sans-serif"
         },
-        buttonStyle:{
+        buttonStyle: {
             backgroundColor: '#E7ca15',
-            color: '#3834b4'
+            color: '#3834b4',
+            fontFamily: "'Nunito', sans-serif",
+            fontWeight: '800'
         }
     }
 });
+
+const length = [
+    {title: 'event1', slot: 2, from: '22/07/2022', to: '22/07/2022'},
+    {title: 'schedule1', slot: 1, from: '25/07/2022', to: '26/07/2022'},
+    {title: 'test', slot: 2, from: '21/07/2022', to: '22/07/2022'},
+    {title: 'event2', slot: 4, from: '27/07/2022', to: '27/07/2022'},
+    {title: 'abc', slot: 2, from: '29/07/2022', to: '29/07/2022'},
+]
 
 const SchedulesTable = () => {
     const classes = useStyles();
@@ -106,7 +119,7 @@ const SchedulesTable = () => {
                         <Typography className={classes.title} variant="h6" noWrap>
                             My Schedules
                         </Typography>
-                        <Button className={classes.buttonStyle} onClick= {(e)=>AddItem(e)}>
+                        <Button className={classes.buttonStyle} onClick={(e) => AddItem(e)}>
                             Add Schedules
                         </Button>
                     </Toolbar>
@@ -172,31 +185,31 @@ const SchedulesTable = () => {
                                         </TableCell>
                                     </TableRow>
                                 ))} */}
-                                {/* {length && length.map((item, index) => ( */}
-                                    <TableRow>
-                                        <TableCell style={{ border: '2px solid #3834b4' }} >
-
-                                        </TableCell>
-                                        <TableCell style={{ border: '2px solid #3834b4', width: '150px' }} >
-
-                                        </TableCell>
-                                        <TableCell style={{ border: '2px solid #3834b4', width: '300px' }} >
-
-                                        </TableCell>
-                                        <TableCell style={{ border: '2px solid #3834b4', width: '250px' }}>
-
-                                        </TableCell>
-                                        <TableCell style={{ border: '2px solid #3834b4', width: '150px' }} >
-
-                                        </TableCell>
-                                        <TableCell style={{ border: '2px solid #3834b4', width: '100px' }} >
-                                            {/* <AddRounded
-                                                onClick={(e) => onAdd(e, item)}
-                                            /> */}
-                                        </TableCell>
-
-                                    </TableRow>
-                                {/* ))} */}
+                                {length && length.map((item, index) => (
+                                <TableRow>
+                                    <TableCell style={{ border: '2px solid #3834b4' }} >
+                                        1
+                                    </TableCell>
+                                    <TableCell style={{ border: '2px solid #3834b4', width: '250px' }} >
+                                        {item.title}
+                                    </TableCell>
+                                    <TableCell style={{ border: '2px solid #3834b4', width: '100px' }} >
+                                    {item.slot}
+                                    </TableCell>
+                                    <TableCell style={{ border: '2px solid #3834b4', width: '150px' }}>
+                                    {item.from}
+                                    </TableCell>
+                                    <TableCell style={{ border: '2px solid #3834b4', width: '200px' }} >
+                                    {item.to}
+                                    </TableCell>
+                                    <TableCell style={{ border: '2px solid #3834b4', width: '150px', textAlign: 'center' }} >
+                                    <EditRoundedIcon
+                                            onClick={(e) => console.log(e)}
+                                        />
+                                        <DeleteForeverRoundedIcon/>
+                                    </TableCell>
+                                </TableRow>
+                                ))} 
                             </TableBody>
                         </Table>
                     </TableContainer>

@@ -7,16 +7,16 @@ import ReportOutlinedIcon from '@mui/icons-material/ReportOutlined';
 import React from 'react'
 import { Link, useHistory, useLocation } from 'react-router-dom'
 import MenuIcon from '@material-ui/icons/Menu';
-import Header from '../Component/Header';
+import Footer from '../Component/Footer';
 import logo from '../logo.svg'
-
+import './SideBar.css'
 const drawerWidth = 240
 
 const useStyles = makeStyles((theme) => {
     return {
         pages: {
             width: '100%',
-            padding: theme.spacing(3)
+            padding: theme.spacing(3),
         },
         root: {
             display: 'flex'
@@ -77,7 +77,14 @@ const useStyles = makeStyles((theme) => {
             height: '45px',
         },
         logo: {
-            marginTop: '-20px'
+            marginTop: '-10px',
+            height: '70px'
+        },
+        buttonStyle: {
+            backgroundColor: '#E7ca15',
+            color: '#3834b4',
+            fontFamily: "'Nunito', sans-serif",
+            fontWeight: '800'
         }
     }
 })
@@ -165,7 +172,7 @@ const SideBar = (props) => {
                 </Link>
                 {/* </div> */}
             </div>
-            <List>
+            <List style={{ fontFamily: "'Nunito', sans-serif" }}>
                 {menuItems.map(item => (
                     <ListItem
                         key={item.text}
@@ -199,13 +206,13 @@ const SideBar = (props) => {
                         <Typography className={classes.adminBar}></Typography>
                         <Typography className={classes.adminLogo}>
                             <div>
-                                <Button
+                                <Button className={classes.buttonStyle}
                                     ref={anchorRef}
                                     aria-controls={open ? 'menu-list-grow' : undefined}
                                     aria-haspopup="true"
                                     onClick={handleToggle}
                                 >
-                                    Sign In
+                                    Account
                                 </Button>
                                 <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
                                     {({ TransitionProps, placement }) => (
@@ -216,8 +223,9 @@ const SideBar = (props) => {
                                             <Paper>
                                                 <ClickAwayListener onClickAway={handleClose}>
                                                     <MenuList autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
-                                                        {/* <MenuItem onClick={handleClose}>Profile</MenuItem>
-                                                        <MenuItem onClick={handleClose}>My account</MenuItem> */}
+                                                        <Link to='/login' style={{textDecoration: 'none', color: 'black'}}>
+                                                            <MenuItem>Sign In</MenuItem>
+                                                        </Link>
                                                         <MenuItem>Logout</MenuItem>
                                                     </MenuList>
                                                 </ClickAwayListener>
@@ -260,7 +268,7 @@ const SideBar = (props) => {
                         </Drawer>
                     </Hidden>
                 </nav>
-            </div>
+            </div >
         </>
     )
 }

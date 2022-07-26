@@ -1,5 +1,7 @@
 import { AppBar, Box, Button, Divider, Grid, makeStyles, Paper, Toolbar, Typography } from '@material-ui/core'
-import React from 'react'
+import { TextField } from '@mui/material';
+import React, { useState } from 'react'
+import './Profile.css'
 
 const useStyles = makeStyles((theme) => {
     return {
@@ -16,7 +18,8 @@ const useStyles = makeStyles((theme) => {
             [theme.breakpoints.up('sm')]: {
                 display: 'block',
             },
-            color: 'black'
+            color: 'black',
+            fontFamily: "'Nunito', sans-serif"
         },
         search: {
             position: 'relative',
@@ -63,11 +66,13 @@ const useStyles = makeStyles((theme) => {
         static: {
             flexGrow: '1',
             backgroundColor: 'white',
-            border: '2px solid #3834b4'
+            border: '2px solid #3834b4',
+            fontFamily: "'Nunito', sans-serif"
         },
         menuButton: {
             marginRight: theme.spacing(2),
-            color: '#3834b4'
+            color: '#3834b4',
+            fontFamily: "'Nunito', sans-serif"
         },
         table: {
             width: '100%',
@@ -77,12 +82,34 @@ const useStyles = makeStyles((theme) => {
         buttonStyle: {
             backgroundColor: '#E7ca15',
             color: '#3834b4',
+            fontFamily: "'Nunito', sans-serif",
+            fontWeight: '800',
+            marginLeft: '20px'
+        },
+        label: {
+            display: 'inline-block',
+            textAlign: 'right',
+            fontWeight: '600'
         }
     }
 });
 
 const AccountsContent = () => {
     const classes = useStyles()
+    const [isEdit, setIsEdit] = useState(false)
+    const [name, setName] = useState('')
+    const [business_name, setBusinessName] = useState('')
+    const [email, setEmail] = useState('')
+    const [link, setlink] = useState('')
+    const [website, setWebsite] = useState('')
+    const [address, setAddress] = useState('')
+    const [phone_number, setPhone] = useState('')
+    const onEdit = (e) => {
+        setIsEdit(true)
+    }
+    const onBack = (e) => {
+        setIsEdit(false)
+    }
     return (
         <>
             <Paper className={classes.root}>
@@ -91,9 +118,27 @@ const AccountsContent = () => {
                         <Typography className={classes.title} variant="h6" noWrap>
                             Account Info
                         </Typography>
-                        <Button className={classes.buttonStyle}>
-                            Edit
-                        </Button>
+                        {
+                            !isEdit ? (
+                                <>
+                                    <Button className={classes.buttonStyle} onClick={(e) => { onEdit(e) }}>
+                                        Edit
+                                    </Button>
+                                    <Button className={classes.buttonStyle}>
+                                        Delete
+                                    </Button>
+                                </>
+                            ) : (
+                                <>
+                                    <Button className={classes.buttonStyle} >
+                                        Save
+                                    </Button>
+                                    <Button className={classes.buttonStyle} onClick={(e) => { onBack(e) }}>
+                                        Back
+                                    </Button>
+                                </>
+                            )
+                        }
                     </Toolbar>
                 </AppBar>
             </Paper>
@@ -103,21 +148,69 @@ const AccountsContent = () => {
                     <Box sx={{ flexGrow: 1 }}>
                         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                             <Grid item xs={12} sm={12} md={6} lg={4}>
-                                <div style={{ display: 'flex' }}>
-                                    <h4>Name:</h4>
-                                    <p>Sonam Jha</p>
+                                <div>
+                                    <label className={classes.label}>Name:</label>
+                                    {
+                                        isEdit ?
+                                            (
+                                                <div className='p-tag'>
+                                                    <TextField id="outlined-basic"
+                                                        variant="outlined"
+                                                        className='input-width'
+                                                        name='name'
+                                                        value={name}
+                                                        onChange={(e) => { setName(e.target.value) }} />
+                                                </div>
+                                            ) : (
+                                                <div className='p-tag'>
+                                                    <p>Sonam Jha</p>
+                                                </div>
+                                            )
+                                    }
                                 </div>
                             </Grid>
                             <Grid item xs={12} sm={12} md={6} lg={4}>
-                                <div style={{ display: 'flex' }}>
-                                    <h4>Email:</h4>
-                                    <p>sonam43jha@gmail.com</p>
+                                <div>
+                                    <label className={classes.label}>Email:</label>
+                                    {
+                                        isEdit ?
+                                            (
+                                                <div className='p-tag'>
+                                                    <TextField id="outlined-basic"
+                                                        variant="outlined"
+                                                        className='input-width'
+                                                        name='email'
+                                                        value={email}
+                                                        onChange={(e) => { setEmail(e.target.value) }} />
+                                                </div>
+                                            ) : (
+                                                <div className='p-tag'>
+                                                    <p>sonam@gmail.com</p>
+                                                </div>
+                                            )
+                                    }
                                 </div>
                             </Grid>
                             <Grid item xs={12} sm={12} md={6} lg={4}>
-                                <div style={{ display: 'flex' }}>
-                                    <h4>Name:</h4>
-                                    <p>Sonam Jha</p>
+                                <div>
+                                    <label className={classes.label}>Phone:</label>
+                                    {
+                                        isEdit ?
+                                            (
+                                                <div className='p-tag'>
+                                                    <TextField id="outlined-basic"
+                                                        variant="outlined"
+                                                        className='input-width'
+                                                        name='phone_number'
+                                                        value={phone_number}
+                                                        onChange={(e) => { setPhone(e.target.value) }} />
+                                                </div>
+                                            ) : (
+                                                <div className='p-tag'>
+                                                    <p>8779255306</p>
+                                                </div>
+                                            )
+                                    }
                                 </div>
                             </Grid>
                         </Grid>
@@ -129,42 +222,148 @@ const AccountsContent = () => {
                     <Box sx={{ flexGrow: 1 }}>
                         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                             <Grid item xs={12} sm={12} md={6} lg={4} >
-                                <div style={{ display: 'flex' }}>
-                                    <h4>Name:</h4>
-                                    <p>Sonam Jha</p>
+                                <div>
+                                    <label className={classes.label}>Business Name:</label>
+                                    {
+                                        isEdit ?
+                                            (
+                                                <div className='p-tag'>
+                                                    <TextField id="outlined-basic"
+                                                        variant="outlined"
+                                                        className='input-width'
+                                                        name='business_name'
+                                                        value={business_name}
+                                                        onChange={(e) => { setBusinessName(e.target.value) }} />
+                                                </div>
+                                            ) : (
+                                                <div className='p-tag'>
+                                                    <p>ContriverTech</p>
+                                                </div>
+                                            )
+                                    }
                                 </div>
                             </Grid>
                             <Grid item xs={12} sm={12} md={6} lg={4} >
-                                <div style={{ display: 'flex' }}>
-                                    <h4>Name:</h4>
-                                    <p>Sonam Jha</p>
+                                <div>
+                                    <label className={classes.label}>Website:</label>
+                                    {
+                                        isEdit ?
+                                            (
+                                                <div className='p-tag'>
+                                                    <TextField id="outlined-basic"
+                                                        variant="outlined"
+                                                        className='input-width'
+                                                        name='website'
+                                                        value={website}
+                                                        onChange={(e) => { setWebsite(e.target.value) }} />
+                                                </div>
+                                            ) : (
+                                                <div className='p-tag'>
+                                                    <p>contrivertech.com</p>
+                                                </div>
+                                            )
+                                    }
                                 </div>
                             </Grid>
                             <Grid item xs={12} sm={12} md={6} lg={4} >
-                                <div style={{ display: 'flex' }}>
-                                    <h4>Name:</h4>
-                                    <p>Sonam Jha</p>
+                                <div>
+                                    <label className={classes.label}>Address:</label>
+                                    {
+                                        isEdit ?
+                                            (
+                                                <div className='p-tag'>
+                                                    <TextField id="outlined-basic"
+                                                        variant="outlined"
+                                                        className='input-width'
+                                                        name='address'
+                                                        value={address}
+                                                        onChange={(e) => { setAddress(e.target.value) }} />
+                                                </div>
+                                            ) : (
+                                                <div className='p-tag'>
+                                                    <p>Andheri, East, Mhada Colony, Mumbai</p>
+                                                </div>
+                                            )
+                                    }
                                 </div>
                             </Grid>
                         </Grid>
                     </Box>
                 </div>
+                {/* <div style={{ display: 'flex' }}>
+                    <button className='address-btn' >
+                        City
+                    </button>
+                    <button className='address-btn' >
+                        State
+                    </button>
+                    <button className='address-btn' >
+                        Zip Code
+                    </button>
+                </div> */}
                 <Divider />
                 <div style={{ marginTop: '50px' }}>
                     <h5>Your Preference: </h5>
                     <Box sx={{ flexGrow: 1 }}>
                         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                             <Grid item xs={12} sm={12} md={6} lg={6} >
-                                <h4>Receive Newsletter:</h4>
+                                <div style={{ display: 'flex' }}>
+                                    <h4>Receive Newsletter:</h4>
+                                    {
+                                        isEdit ?
+                                            (
+                                                <div className='m-17'>
+                                                    <input type="checkbox" id="vehicle12" name="vehicle12" value="Bike" />
+                                                </div>
+                                            ) : (
+                                                <div className='m-17'>
+                                                    <input type="checkbox" id="vehicle12" name="vehicle12" value="Bike" />
+                                                </div>
+                                            )
+                                    }
+                                </div>
                             </Grid>
                             <Grid item xs={12} sm={12} md={6} lg={6} >
-                                <h4>Receive Promotional Mails:</h4>
+                                <div style={{ display: 'flex' }}>
+                                    <h4>Receive Promotional Mails:</h4>
+                                    {
+                                        isEdit ?
+                                            (
+                                                <div className='m-17'>
+                                                    <input type="checkbox" id="vehicle12" name="vehicle12" value="Bike" />
+                                                </div>
+                                            ) : (
+                                                <div className='m-17'>
+                                                    <input type="checkbox" id="vehicle12" name="vehicle12" value="Bike" />
+                                                </div>
+                                            )
+                                    }
+                                </div>
                             </Grid>
                             <Grid item xs={12} sm={12} md={6} lg={6} >
-                                <h4>Member Since:</h4>
+                                <div style={{ display: 'flex' }}>
+                                    <h4>Member Since:</h4>
+                                    {
+                                        isEdit ?
+                                            (
+                                                <div className='p-tag'>
+                                                    <p>5 Feb 2022</p>
+                                                </div>
+                                            ) : (
+                                                <div className='p-tag'>
+                                                    <p>5 Feb 2022</p>
+                                                </div>
+                                            )
+                                    }
+                                </div>
                             </Grid>
                             <Grid item xs={12} sm={12} md={6} lg={6} >
-                                <h4>Your Unique QR:</h4>
+                                <div style={{ display: 'flex' }}>
+                                    <h4>Your Unique QR:</h4>
+                                    <div className='p-tag'>
+                                        <p>https://bookbyqr.com/in/rRZ183</p>
+                                    </div>
+                                </div>
                             </Grid>
                         </Grid>
                     </Box>

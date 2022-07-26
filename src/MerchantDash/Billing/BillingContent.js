@@ -43,11 +43,14 @@ const useStyles = makeStyles((theme) => {
         static: {
             flexGrow: '1',
             backgroundColor: 'white',
-            border: '2px solid #3834b4'
+            border: '2px solid #3834b4',
+            fontFamily: "'Nunito', sans-serif"
         },
         buttonStyle: {
             backgroundColor: '#E7ca15',
-            color: '#3834b4'
+            color: '#3834b4',
+            fontFamily: "'Nunito', sans-serif",
+            fontWeight: '800'
         },
         title: {
             flexGrow: 1,
@@ -55,7 +58,8 @@ const useStyles = makeStyles((theme) => {
             [theme.breakpoints.up('sm')]: {
                 display: 'block',
             },
-            color: 'black'
+            color: 'black',
+            fontFamily: "'Nunito', sans-serif"
         },
     }
 })

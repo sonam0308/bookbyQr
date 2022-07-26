@@ -262,7 +262,7 @@
                     margin-top: 24px;
                     width: 112px;
                     height: 32px;
-                    font-family: Lato;
+                    font-family: 'Nunito', sans-serif;
                     font-size: 12px;
                     letter-spacing: 0.5px;
                     text-align: center;
@@ -449,7 +449,7 @@
         }
         .testimonials h3 {
             text-transform: uppercase;
-            font-family: Lato;
+            font-family: 'Nunito', sans-serif;
             font-size: 23px;
             font-weight: 900;
             line-height: 1.42;
@@ -460,7 +460,7 @@
             margin-left: 50px;
         }
         .testimonials p {
-            font-family: Lato;
+            font-family: 'Nunito', sans-serif;
             font-size: 15px;
             line-height: 1.75;
             letter-spacing: 0.7px;
@@ -536,7 +536,7 @@
                     position: absolute;
                     top: -67px;
                     color: #3834b4 ;
-                    font-family: Lato;
+                    font-family: 'Nunito', sans-serif;
                     font-size: 12px;
                     letter-spacing: 0.5px;
                     text-align: center;
@@ -594,7 +594,7 @@
     }
     .testimonials h3 {
         text-transform: uppercase;
-        font-family: Lato;
+        font-family: 'Nunito', sans-serif;
         font-size: 21px;
         font-weight: 900;
         line-height: 1.42;
@@ -605,7 +605,7 @@
         margin-left: 9px;
     }
     .testimonials p {
-        font-family: Lato;
+        font-family: 'Nunito', sans-serif;
         font-size: 14px;
         line-height: 1.75;
         letter-spacing: 0.7px;
