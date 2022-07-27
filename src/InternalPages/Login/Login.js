@@ -46,7 +46,7 @@ const Login = () => {
           <div className="remember-me--forget-password">
             <p>Forgot Password?</p>
           </div>
-          <Link to="/schedules"><button className='signup-button'>Login</button></Link>
+          <Link to="/merchant/schedules"><button className='signup-button'>Login</button></Link>
           <div className="new-user">
             New to BookByQr?<Link to="/register"> Signup Now For Free</Link>
           </div>
