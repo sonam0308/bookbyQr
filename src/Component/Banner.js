@@ -34,9 +34,9 @@ const Banner = () => {
                             <span className="icon-bar" />
                             <span className="icon-bar" />
                         </button>
-                        <a className="navbar-brand" href="/">
+                        <Link className="navbar-brand" to="/">
                             <img src="img/svg/logo.svg" className="logo" alt="ZASTA" />
-                        </a>
+                        </Link>
                     </div>
                     <span className="telephone hidden">
                         <img src="img/combined-shape.png" srcSet="img/combined-shape@2x.png 2x, img/combined-shape@3x.png 3x" className="Combined-Shape" alt="phone" />
@@ -78,9 +78,9 @@ const Banner = () => {
                                     <span className="icon-bar" />
                                     <span className="icon-bar" />
                                 </button>
-                                <a className="navbar-brand" href="index.html">
+                                <Link className="navbar-brand" to="/">
                                     <img src="img/svg/logo.svg" className="logo" alt="BookByQr" />
-                                </a>
+                                </Link>
                             </div>
                             <div className="top-links ios-fix-top-links head">
                                 
