@@ -35,15 +35,6 @@ const QrCodeContent = () => {
             <Paper className={classes.root}>
                 <AppBar position="static" className={classes.static}>
                     <Toolbar>
-                        {/* <IconButton
-                            edge="start"
-                            className={classes.menuButton}
-                            color="inherit"
-                            aria-label="open drawer"
-                            onClick={() => getWorkerList("ALL")}
-                        >
-                            <AttachMoneySharp />
-                        </IconButton> */}
                         <Typography className={classes.title} variant="h6" noWrap>
                             QR Code
                         </Typography>
@@ -56,7 +47,7 @@ const QrCodeContent = () => {
             </div>
             <div _ngcontent-serverapp-c139 className="qr-card">
                 <div _ngcontent-serverapp-c139 className="card-body">
-                    <div _ngcontent-serverapp-c139 id="toDownload" className="qr-block text-center">
+                    <div _ngcontent-serverapp-c139 id="toDownload" className="qr-block">
                         <Grid container justify="center">
                             <div _ngcontent-serverapp-c139 className="text-center print-qa-css">
                                 <p _ngcontent-serverapp-c139 className="Barber-express"> Contriver Tech </p>

@@ -1,4 +1,5 @@
-import { Button, Grid, TextField,  Paper, AppBar, Toolbar, Typography, makeStyles } from '@material-ui/core'
+import { Button, Grid, TextField, Paper, AppBar, Toolbar, Typography, makeStyles } from '@material-ui/core'
+import { Card, CardActions, CardContent } from '@mui/material'
 import React from 'react'
 
 const useStyles = makeStyles((theme) => {
@@ -53,10 +54,65 @@ const ReportsContentPage = () => {
                     </Toolbar>
                 </AppBar>
             </Paper>
-            <div className='box-wrap' style={{marginTop: '20px'}}>
-                <div class="head-wrap">
+            <div class="head-wrap">
                     <h2 class="center-txt-reports">Reports</h2>
                 </div>
+            <Grid container spacing={5} >
+                <Grid container item spacing={1} xs={12} lg={6}>
+                    <div className="head-box">Recharge Summary</div>
+                    <TextField
+                        id="date"
+                        label="Start Date"
+                        type="date"
+                        defaultValue="2017-05-24"
+                        // sx={{ width: 220 }}
+                        InputLabelProps={{
+                            shrink: true,
+                        }}
+                    />
+                    <TextField
+                        id="date"
+                        label="End Date"
+                        type="date"
+                        defaultValue="2017-05-24"
+                        // sx={{ width: 220 }}
+                        InputLabelProps={{
+                            shrink: true,
+                        }}
+                    />
+                    <Grid container justify='center'>
+                        <Button className={classes.buttonStyle} variant='contained' >Mail</Button>
+                    </Grid>
+                </Grid>
+                <Grid container item spacing={1} xs={12} lg={6}>
+                    <div className="head-box">Booking Summary</div>
+                    <TextField
+                        id="date"
+                        label="Start Date"
+                        type="date"
+                        defaultValue="2017-05-24"
+                        // sx={{ width: 220 }}
+                        InputLabelProps={{
+                            shrink: true,
+                        }}
+                    />
+                    <TextField
+                        id="date"
+                        label="End Date"
+                        type="date"
+                        defaultValue="2017-05-24"
+                        // sx={{ width: 220 }}
+                        InputLabelProps={{
+                            shrink: true,
+                        }}
+                    />
+                    <Grid container justify='center'>
+                        <Button className={classes.buttonStyle} variant='contained' >Mail</Button>
+                    </Grid>
+                </Grid>
+            </Grid>
+            {/* <div className='box-wrap' style={{ marginTop: '20px' }}>
+                
                 <div className="box-iner-wrap">
                     <div className="row">
                         <div className="col-sm-6 col-xs-12 col-md-6 col-lg-6" >
@@ -82,7 +138,7 @@ const ReportsContentPage = () => {
                                 }}
                             />
                             <Grid container justify='center'>
-                            <Button className={classes.buttonStyle} variant='contained' >Mail</Button>
+                                <Button className={classes.buttonStyle} variant='contained' >Mail</Button>
                             </Grid>
                         </div>
                         <div className="col-sm-6 col-xs-12 col-md-6 col-lg-6 ">
@@ -108,12 +164,12 @@ const ReportsContentPage = () => {
                                 }}
                             />
                             <Grid container justify='center'>
-                            <Button className={classes.buttonStyle} variant='contained' >Mail</Button>
+                                <Button className={classes.buttonStyle} variant='contained' >Mail</Button>
                             </Grid>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

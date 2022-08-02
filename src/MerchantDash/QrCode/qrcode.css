@@ -15,4 +15,10 @@
   padding: 24px;
   background: #fff;
   border-radius: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-block{
+  text-align: center;
 }

@@ -3,6 +3,7 @@ import React from 'react'
 import { useHistory } from 'react-router-dom';
 import EditRoundedIcon from '@material-ui/icons/EditRounded';
 import DeleteForeverRoundedIcon from '@mui/icons-material/DeleteForeverRounded';
+import { Card, CardActions, CardContent, CardMedia } from '@mui/material';
 const useStyles = makeStyles((theme) => {
     return {
         root: {
@@ -83,16 +84,19 @@ const useStyles = makeStyles((theme) => {
             color: '#3834b4',
             fontFamily: "'Nunito', sans-serif",
             fontWeight: '800'
+        },
+        centerButton:{
+            justifyContent: 'center'
         }
     }
 });
 
 const length = [
-    {title: 'event1', slot: 2, from: '22/07/2022', to: '22/07/2022'},
-    {title: 'schedule1', slot: 1, from: '25/07/2022', to: '26/07/2022'},
-    {title: 'test', slot: 2, from: '21/07/2022', to: '22/07/2022'},
-    {title: 'event2', slot: 4, from: '27/07/2022', to: '27/07/2022'},
-    {title: 'abc', slot: 2, from: '29/07/2022', to: '29/07/2022'},
+    { title: 'event1', slot: 2, from: '22/07/2022', to: '22/07/2022' },
+    { title: 'schedule1', slot: 1, from: '25/07/2022', to: '26/07/2022' },
+    { title: 'test', slot: 2, from: '21/07/2022', to: '22/07/2022' },
+    { title: 'event2', slot: 4, from: '27/07/2022', to: '27/07/2022' },
+    { title: 'abc', slot: 2, from: '29/07/2022', to: '29/07/2022' },
 ]
 
 const SchedulesTable = () => {
@@ -107,15 +111,6 @@ const SchedulesTable = () => {
             <Paper className={classes.root}>
                 <AppBar position="static" className={classes.static}>
                     <Toolbar>
-                        {/* <IconButton
-                            edge="start"
-                            className={classes.menuButton}
-                            color="inherit"
-                            aria-label="open drawer"
-                            onClick={() => getWorkerList("ALL")}
-                        >
-                            <AttachMoneySharp />
-                        </IconButton> */}
                         <Typography className={classes.title} variant="h6" noWrap>
                             My Schedules
                         </Typography>
@@ -124,97 +119,161 @@ const SchedulesTable = () => {
                         </Button>
                     </Toolbar>
                 </AppBar>
-                <Grid >
-                    <TableContainer className={classes.container}>
-                        <Table stickyHeader aria-label="sticky table" className={classes.table}>
-                            <TableHead>
-                                <TableRow style={{ border: '2px solid #3834b4' }}>
-
-                                    <TableCell
-                                        style={{ border: '2px solid #3834b4' }}
-                                    >
-                                        No.
-                                    </TableCell>
-                                    <TableCell
-                                        style={{ border: '2px solid #3834b4' }}
-                                    >
-                                        Title
-                                    </TableCell>
-                                    <TableCell
-                                        style={{ border: '2px solid #3834b4', width: '200px' }}
-                                    >
-                                        Slot
-                                    </TableCell>
-                                    <TableCell
-                                        style={{ border: '2px solid #3834b4', width: '200px' }}
-                                    >
-                                        From
-                                    </TableCell>
-                                    <TableCell style={{ border: '2px solid #3834b4' }}>
-                                        To
-                                    </TableCell>
-                                    <TableCell
-                                        style={{ border: '2px solid #3834b4' }}
-                                    >
-                                        Action
-                                    </TableCell>
-                                </TableRow>
-                            </TableHead>
-                            <TableBody>
-                                {/* {data && data.map((item, index) => (
-                                    <TableRow key={item.id}>
-                                        <TableCell style={{ border: '2px solid #3834b4' }} >
-                                            {index + 1}
-                                        </TableCell>
-                                        <TableCell style={{ border: '2px solid #3834b4', width: '150px' }} >
-                                            {item.uniqueId}
-                                        </TableCell>
-                                        <TableCell style={{ border: '2px solid #3834b4', width: '300px' }} >
-                                            {item.planName}
-                                        </TableCell>
-                                        <TableCell style={{ border: '2px solid #3834b4', width: '250px' }}>
-                                            {item.duration}
-                                        </TableCell>
-                                        <TableCell style={{ border: '2px solid #3834b4', width: '150px' }} >
-                                            {item.price}
-                                        </TableCell>
-                                        <TableCell style={{ border: '2px solid #3834b4', width: '100px' }} >
-                                            <EditRoundedIcon
-                                                onClick={(e) => onEdit(e, item)}
-                                            />
-                                        </TableCell>
-                                    </TableRow>
-                                ))} */}
-                                {length && length.map((item, index) => (
-                                <TableRow>
-                                    <TableCell style={{ border: '2px solid #3834b4' }} >
-                                        1
-                                    </TableCell>
-                                    <TableCell style={{ border: '2px solid #3834b4', width: '250px' }} >
-                                        {item.title}
-                                    </TableCell>
-                                    <TableCell style={{ border: '2px solid #3834b4', width: '100px' }} >
-                                    {item.slot}
-                                    </TableCell>
-                                    <TableCell style={{ border: '2px solid #3834b4', width: '150px' }}>
-                                    {item.from}
-                                    </TableCell>
-                                    <TableCell style={{ border: '2px solid #3834b4', width: '200px' }} >
-                                    {item.to}
-                                    </TableCell>
-                                    <TableCell style={{ border: '2px solid #3834b4', width: '150px', textAlign: 'center' }} >
-                                    <EditRoundedIcon
-                                            onClick={(e) => console.log(e)}
-                                        />
-                                        <DeleteForeverRoundedIcon/>
-                                    </TableCell>
-                                </TableRow>
-                                ))} 
-                            </TableBody>
-                        </Table>
-                    </TableContainer>
-                </Grid>
             </Paper>
+            <Grid container spacing={1} >
+                <Grid container item spacing={1}  xs={4} lg={4}>
+                    <Card sx={{ maxWidth: 300 }} style={{ marginTop: '50px', borderRadius: '20px', width: '300px', height: '90%' }}>
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" component="div">
+                                Title : Event 1
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                Slot: 2
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                Seat: 4
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                From: 22/07/2022
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                To: 22/07/2022
+                            </Typography>
+                        </CardContent>
+                        <CardActions className={classes.centerButton}>
+                            <Button className={classes.buttonStyle}>View</Button>
+                            <Button className={classes.buttonStyle}>Delete</Button>
+                        </CardActions>
+                    </Card>
+                </Grid>
+                <Grid container item spacing={1} xs={4} lg={4}>
+                    <Card sx={{ maxWidth: 300 }} style={{ marginTop: '50px', borderRadius: '20px', width: '300px', height: '90%' }}>
+                        <CardContent>
+                            <Typography gutterBottom variant="h6" component="div">
+                                Title : Event 1
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                Slot: 2
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                Seat: 4
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                From: 22/07/2022
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                To: 22/07/2022
+                            </Typography>
+                        </CardContent>
+                        <CardActions className={classes.centerButton}>
+                            <Button className={classes.buttonStyle}>View</Button>
+                            <Button className={classes.buttonStyle}>Delete</Button>
+                        </CardActions>
+                    </Card>
+                </Grid>
+                <Grid container item spacing={1} xs={4} lg={4}>
+                    <Card sx={{ maxWidth: 300 }} style={{ marginTop: '50px', borderRadius: '20px', width: '300px', height: '90%' }}>
+                        <CardContent>
+                            <Typography gutterBottom variant="h6" component="div">
+                                Title : Event 1
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                Slot: 2
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                Seat: 4
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                From: 22/07/2022
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                To: 22/07/2022
+                            </Typography>
+                        </CardContent>
+                        <CardActions className={classes.centerButton}>
+                            <Button className={classes.buttonStyle}>View</Button>
+                            <Button className={classes.buttonStyle}>Delete</Button>
+                        </CardActions>
+                    </Card>
+                </Grid>
+            </Grid>
+            <Grid container spacing={1} >
+                <Grid container item spacing={1}  xs={4} lg={4}>
+                    <Card sx={{ maxWidth: 300 }} style={{ marginTop: '50px', borderRadius: '20px', width: '300px', height: '90%' }}>
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" component="div">
+                                Title : Event 1
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                Slot: 2
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                Seat: 4
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                From: 22/07/2022
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                To: 22/07/2022
+                            </Typography>
+                        </CardContent>
+                        <CardActions className={classes.centerButton}>
+                            <Button className={classes.buttonStyle}>View</Button>
+                            <Button className={classes.buttonStyle}>Delete</Button>
+                        </CardActions>
+                    </Card>
+                </Grid>
+                <Grid container item spacing={1} xs={4} lg={4}>
+                    <Card sx={{ maxWidth: 300 }} style={{ marginTop: '50px', borderRadius: '20px', width: '300px', height: '90%' }}>
+                        <CardContent>
+                            <Typography gutterBottom variant="h6" component="div">
+                                Title : Event 1
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                Slot: 2
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                Seat: 4
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                From: 22/07/2022
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                To: 22/07/2022
+                            </Typography>
+                        </CardContent>
+                        <CardActions className={classes.centerButton}>
+                            <Button className={classes.buttonStyle}>View</Button>
+                            <Button className={classes.buttonStyle}>Delete</Button>
+                        </CardActions>
+                    </Card>
+                </Grid>
+                <Grid container item spacing={1} xs={4} lg={4}>
+                    <Card sx={{ maxWidth: 300 }} style={{ marginTop: '50px', borderRadius: '20px', width: '300px', height: '90%' }}>
+                        <CardContent>
+                            <Typography gutterBottom variant="h6" component="div">
+                                Title : Event 1
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                Slot: 2
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                Seat: 4
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                From: 22/07/2022
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                To: 22/07/2022
+                            </Typography>
+                        </CardContent>
+                        <CardActions className={classes.centerButton}>
+                            <Button className={classes.buttonStyle}>View</Button>
+                            <Button className={classes.buttonStyle}>Delete</Button>
+                        </CardActions>
+                    </Card>
+                </Grid>
+            </Grid>
         </>
     )
 }
