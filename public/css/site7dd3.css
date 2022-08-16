@@ -480,7 +480,7 @@ svg.clip-svg {
 .jumbotron h3 {
   /*width: 376px;*/
   height: 22px;
-  font-family: Lato;
+  font-family: 'Nunito', sans-serif;
   font-size: 18px;
   letter-spacing: 0.6px;
   text-align: left;
@@ -491,7 +491,7 @@ svg.clip-svg {
 .jumbotron h1 {
   width: 564px;
   height: 120px;
-  font-family: Lato;
+  font-family: 'Nunito', sans-serif;
   font-size: 48px;
   font-weight: 900;
   line-height: 1.25;
@@ -1406,7 +1406,7 @@ video::-webkit-media-controls-start-playback-button {
 }
 .testimonials h3 {
   text-transform: uppercase;
-  font-family: Lato;
+  font-family: 'Nunito', sans-serif;
   font-size: 24px;
   font-weight: 900;
   line-height: 1.42;
@@ -1417,7 +1417,7 @@ video::-webkit-media-controls-start-playback-button {
   margin-left: 228px;
 }
 .testimonials p {
-  font-family: Lato;
+  font-family: 'Nunito', sans-serif;
   font-size: 16px;
   line-height: 1.75;
   letter-spacing: 0.7px;
@@ -1534,7 +1534,7 @@ video::-webkit-media-controls-start-playback-button {
   height: 42px;
   border-radius: 3px;
   border: solid 1px #d1dae3;
-  font-family: Lato;
+  font-family: 'Nunito', sans-serif;
   font-size: 14px;
   font-weight: normal;
   letter-spacing: 0.7px;

@@ -8,8 +8,12 @@
     text-align: center;
 }
 
+.m-17{
+    margin: 17px;
+}
+
 .p-tag{
-    margin: 5px;
+    margin: 4px;
 }
 
 .vertical-center {
